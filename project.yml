@@ -1,0 +1,47 @@
+company: Altera
+description: Open Source, Agilex 5E based DC-SCM
+name: Agilex 5E Modular DC-SCM
+
+scenarios:
+  Agilex 5-based DC-SCM Kit:
+    device: agilex-5-based-dc-scm-dev-setup
+    description: A setup scenario featuring a DC-SCM Breakout board and a DC-SCM board with MitySOM-A5E and required software
+    payloads:
+      - device: altera-modular-agilex-5-dc-scm-som-assembly -> mitysom-a5e_mini -> altera-a5eb013bb23be6scs
+        software: agilex_5_e-series_gsrd -> gsdr
+      - device: altera-modular-agilex-5-dc-scm-som-assembly -> mitysom-a5e_mini -> altera-a5eb013bb23be6scs
+        software: openbmc -> platform_management
+devices:
+  agilex-5-based-dc-scm-dev-setup: ref
+  altera-modular-agilex-5-dc-scm-som-assembly: ref
+  altera-modular-agilex-5-dc-scm: ref
+  bmc-breakout-board: ref
+  altera-a5eb013bb23be6scs: ref
+  MitySOM-A5E Mini:
+    category: SoMs
+    vendor: Critical Link
+    image: https://openhardware.antmicro.com//imported/components/mitysom-a5e-mini/previews/isoT.webp
+    contains:
+      - altera-a5eb013bb23be6scs
+
+  MitySOM-A5E Mini Connector:
+    group: hidden
+  DC-SCM 2.1 Edge:
+    group: hidden
+
+  Reference Server Platform:
+    vendor: other
+    category: Complex devices
+
+software:
+  Agilex 5 E-Series GSRD:
+    what: fpga-bitstream
+    description: Golden System Reference Design for Agilex 5 E-Series
+    sources:
+      GSDR: $GH/altera-fpga/agilex5e-ed-gsrd
+  OpenBMC:
+    what: linux-app
+    description: OpenBMC for the Agilex 5 E-Series SoC FPGA
+    sources:
+      Platform Management: $GH/altera-fpga/agilex5-ed-platform-management:dk-a5e013bm16aea-omnimc-sensor/bmc-demo
+
