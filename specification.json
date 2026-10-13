@@ -1,0 +1,3915 @@
+{
+  "version": "20250623.14",
+  "include": [
+    "relative://vsd-data/components-specification.json"
+  ],
+  "metadata": {
+    "editableTypes": true,
+    "styles": {
+      "__edited": {
+        "pill": {
+          "color": "#CECECE",
+          "text": "Custom"
+        }
+      },
+      "__new": {
+        "pill": {
+          "color": "#CECECE",
+          "text": "Custom"
+        }
+      }
+    },
+    "icons": {
+      "hw-icon": "https://openhardware.antmicro.com",
+      "designer-media-icon": "https://raw.githubusercontent.com/antmicro/designer-media-files/main/"
+    },
+    "urls": {
+      "designer_device": {
+        "icon": "devices.svg",
+        "name": "Go to device",
+        "url": "https://designer.antmicro.com/library/devices/"
+      },
+      "hwp": {
+        "icon": "hwp.svg",
+        "name": "Open Hardware Portal",
+        "url": "https://openhardware.antmicro.com/"
+      }
+    }
+  },
+  "graphs": [
+    {
+      "id": "6e04368b-5466-4e21-8d30-be613d53257e",
+      "name": "Agilex-5 DC-SCM Development Setup",
+      "nodes": [
+        {
+          "id": "57857bc9-b08d-43e7-a4ba-65498bebe24b",
+          "position": {
+            "x": 2011,
+            "y": 286
+          },
+          "width": 0,
+          "twoColumn": true,
+          "interfaces": [
+            {
+              "name": "wire to board_1",
+              "id": "3c57535a-03c9-4a99-8fd5-8e5d21369d6a",
+              "direction": "inout",
+              "side": "right",
+              "hidden": false
+            },
+            {
+              "name": "usb-c_3",
+              "id": "6db8b02f-b48d-4184-99a5-cc2e1c5a386e",
+              "direction": "inout",
+              "side": "right",
+              "hidden": false
+            },
+            {
+              "name": "usb-c_2",
+              "id": "6dfbc8ac-90d3-4733-9e88-5b340d62361a",
+              "direction": "inout",
+              "side": "right",
+              "hidden": false
+            },
+            {
+              "name": "usb-c_1",
+              "id": "e4fb7bb8-d75e-4003-804e-0a84ae972da6",
+              "direction": "inout",
+              "side": "right",
+              "hidden": false
+            },
+            {
+              "name": "rj45",
+              "id": "eef9e74d-29b8-4c54-8bb8-4f9fbbb6a366",
+              "direction": "inout",
+              "side": "right",
+              "hidden": false
+            },
+            {
+              "name": "micro sd-card",
+              "id": "4b0312be-2d3b-47d1-875e-cd7dac50767b",
+              "direction": "inout",
+              "side": "right",
+              "hidden": false
+            },
+            {
+              "name": "mini dp",
+              "id": "bbbaedd1-259f-4a14-8299-253fc9635d9f",
+              "direction": "inout",
+              "side": "right",
+              "hidden": false
+            },
+            {
+              "name": "wire to board",
+              "id": "92ccfebb-6d33-42a8-9a07-d53cde4c43fe",
+              "direction": "inout",
+              "side": "right",
+              "hidden": false
+            },
+            {
+              "name": "SPI flash socket",
+              "id": "52aefaa0-b6d6-4e97-bb4a-616621c89a2c",
+              "direction": "inout",
+              "side": "right",
+              "hidden": false
+            },
+            {
+              "name": "SPI flash socket_1",
+              "id": "a819783e-7ea1-45a3-bdb5-353144d9779b",
+              "direction": "inout",
+              "side": "right",
+              "hidden": false
+            },
+            {
+              "name": "dc-scm 2.1",
+              "externalName": "dc-scm 2.1",
+              "id": "b4e7450a-a2ee-4bc9-a82c-46c141416a56",
+              "direction": "inout",
+              "side": "left",
+              "hidden": false
+            }
+          ],
+          "properties": [],
+          "enabledInterfaceGroups": [],
+          "views": [],
+          "name": "Altera Modular Agilex-5 DC-SCM SoM Assembly",
+          "instanceName": "Altera Modular Agilex-5 DC-SCM SoM Assembly",
+          "subgraph": "e1670bc9-eeb8-4f61-a27a-83d6a3c87e22"
+        },
+        {
+          "id": "c5a5e08f-cbf0-47a6-ad31-ef92768973bd",
+          "position": {
+            "x": 1027,
+            "y": 286
+          },
+          "width": 0,
+          "twoColumn": true,
+          "interfaces": [
+            {
+              "name": "DC_SCM_SPI_SCMCNTRL_IRQ0_B",
+              "id": "d6a4e580-b35b-4f04-a3e8-bb8dde5ed6ee",
+              "direction": "inout",
+              "side": "left",
+              "sidePosition": 0,
+              "hidden": false
+            },
+            {
+              "name": "DC_SCM_STBY_RDY",
+              "id": "b340caf8-c369-4a2e-b79d-acd3c14501a0",
+              "direction": "inout",
+              "side": "left",
+              "sidePosition": 1,
+              "hidden": false
+            },
+            {
+              "name": "PCIE_HPM_SCM_PERST_B",
+              "id": "50ed730f-3f40-49de-95cb-f6aebaf80abe",
+              "direction": "inout",
+              "side": "left",
+              "sidePosition": 2,
+              "hidden": false
+            },
+            {
+              "name": "espi",
+              "id": "41851260-1dfd-4043-87fe-afbc4f545b30",
+              "direction": "inout",
+              "side": "left",
+              "sidePosition": 3,
+              "hidden": false
+            },
+            {
+              "name": "i2c",
+              "id": "e4f213f6-0648-4703-8155-a86bedf49ed0",
+              "direction": "inout",
+              "side": "left",
+              "sidePosition": 4,
+              "hidden": false
+            },
+            {
+              "name": "i2c/i3c[12]",
+              "id": "c5701c34-b995-4c37-ab3a-ecd2165b0d2c",
+              "direction": "inout",
+              "side": "left",
+              "sidePosition": 5,
+              "hidden": false
+            },
+            {
+              "name": "i2c/i3c[13]",
+              "id": "56046bb1-467a-46dc-9bc6-60e943ad1b7b",
+              "direction": "inout",
+              "side": "left",
+              "sidePosition": 6,
+              "hidden": false
+            },
+            {
+              "name": "i2c/i3c[16]",
+              "id": "802e3896-c4cc-4385-b134-0cd898fb8b8d",
+              "direction": "inout",
+              "side": "left",
+              "sidePosition": 7,
+              "hidden": false
+            },
+            {
+              "name": "i2c/i3c[17]",
+              "id": "d30b8eb8-1b90-47e4-a7f4-d3e474f0fb60",
+              "direction": "inout",
+              "side": "left",
+              "sidePosition": 8,
+              "hidden": false
+            },
+            {
+              "name": "i2c[1]",
+              "id": "9acb1742-4d50-49c8-bb22-f11558574b6e",
+              "direction": "inout",
+              "side": "left",
+              "sidePosition": 9,
+              "hidden": false
+            },
+            {
+              "name": "i2c[2]",
+              "id": "f623d986-a387-474c-8a67-c6442ec9264c",
+              "direction": "inout",
+              "side": "left",
+              "sidePosition": 10,
+              "hidden": false
+            },
+            {
+              "name": "i2c[7]",
+              "id": "0856428d-2115-440c-b8c9-f55a7d428527",
+              "direction": "inout",
+              "side": "left",
+              "sidePosition": 11,
+              "hidden": false
+            },
+            {
+              "name": "i2c[8]",
+              "id": "107790af-99cc-4017-b002-f4688f648fa5",
+              "direction": "inout",
+              "side": "left",
+              "sidePosition": 12,
+              "hidden": false
+            },
+            {
+              "name": "ncsi",
+              "id": "39c6c509-49df-421d-af01-ff0956a2493c",
+              "direction": "inout",
+              "side": "left",
+              "sidePosition": 13,
+              "hidden": false
+            },
+            {
+              "name": "refclk",
+              "id": "1599bda5-661f-4c17-8b0a-9b6709b77361",
+              "direction": "inout",
+              "side": "left",
+              "sidePosition": 14,
+              "hidden": false
+            },
+            {
+              "name": "spi[1]",
+              "id": "d941513c-cc1a-4f09-a999-0b4584738854",
+              "direction": "inout",
+              "side": "left",
+              "sidePosition": 15,
+              "hidden": false
+            },
+            {
+              "name": "usb a",
+              "id": "41d906f2-0a5b-4709-8aab-c75b061ed4cb",
+              "direction": "inout",
+              "side": "left",
+              "sidePosition": 16,
+              "hidden": false
+            },
+            {
+              "name": "wire to board",
+              "id": "a81b18e0-7233-4b7e-b91d-5783b92e8386",
+              "direction": "inout",
+              "side": "left",
+              "sidePosition": 17,
+              "hidden": false
+            },
+            {
+              "name": "dc-scm 2.1",
+              "id": "2354427f-0972-4f7f-ad0f-954fdaa08da4",
+              "direction": "inout",
+              "side": "right",
+              "sidePosition": 0,
+              "hidden": false
+            },
+            {
+              "name": "DC_SCM_INTRUSION_B",
+              "id": "0cf31020-2f31-4aa2-a500-5e45af16126f",
+              "direction": "inout",
+              "side": "right",
+              "sidePosition": 1,
+              "hidden": false
+            },
+            {
+              "name": "DC_SCM_STBY_EN",
+              "id": "920eff48-36f6-4bbd-b0c5-7955525a8bc9",
+              "direction": "inout",
+              "side": "right",
+              "sidePosition": 2,
+              "hidden": false
+            },
+            {
+              "name": "DC_SCM_STBY_RST_B",
+              "id": "0d7f39db-ca6b-40f0-aa07-1d94393036e8",
+              "direction": "inout",
+              "side": "right",
+              "sidePosition": 3,
+              "hidden": false
+            },
+            {
+              "name": "fru i2c",
+              "id": "e1097ea6-7143-465b-97ba-acb51664d653",
+              "direction": "inout",
+              "side": "right",
+              "sidePosition": 4,
+              "hidden": false
+            },
+            {
+              "name": "gpio",
+              "id": "28a2948f-db6e-4b1b-97ed-b8b9bdadfe56",
+              "direction": "inout",
+              "side": "right",
+              "sidePosition": 5,
+              "hidden": false
+            },
+            {
+              "name": "i2c/i3c[14]",
+              "id": "54236545-8451-4fb7-9edd-a84f9a3bff07",
+              "direction": "inout",
+              "side": "right",
+              "sidePosition": 6,
+              "hidden": false
+            },
+            {
+              "name": "i2c/i3c[15]",
+              "id": "e289b763-9307-47cc-8e48-51724b7315f7",
+              "direction": "inout",
+              "side": "right",
+              "sidePosition": 7,
+              "hidden": false
+            },
+            {
+              "name": "i2c/i3c[18]",
+              "id": "1e96e328-4290-49f3-a5cd-e4b8119f9018",
+              "direction": "inout",
+              "side": "right",
+              "sidePosition": 8,
+              "hidden": false
+            },
+            {
+              "name": "i2c/i3c[19]",
+              "id": "cf09ff84-bbd1-447d-b60f-2e8f5cc8686e",
+              "direction": "inout",
+              "side": "right",
+              "sidePosition": 9,
+              "hidden": false
+            },
+            {
+              "name": "i2c[3]",
+              "id": "1dd3ac9a-e054-4b68-9c47-cd85190dd69a",
+              "direction": "inout",
+              "side": "right",
+              "sidePosition": 10,
+              "hidden": false
+            },
+            {
+              "name": "i2c[4]",
+              "id": "07b5a498-2ee0-4093-9614-57cd1a4c8ffe",
+              "direction": "inout",
+              "side": "right",
+              "sidePosition": 11,
+              "hidden": false
+            },
+            {
+              "name": "i2c[9]",
+              "id": "615d1f10-3c65-4163-b237-cb4be613490a",
+              "direction": "inout",
+              "side": "right",
+              "sidePosition": 12,
+              "hidden": false
+            },
+            {
+              "name": "oculink",
+              "id": "fc8d2726-9091-4746-a81b-c019c1903ded",
+              "direction": "inout",
+              "side": "right",
+              "sidePosition": 13,
+              "hidden": false
+            },
+            {
+              "name": "pcie x4",
+              "id": "84aebaee-fd5c-4301-ab68-e2e37d16a597",
+              "direction": "inout",
+              "side": "right",
+              "sidePosition": 14,
+              "hidden": false
+            },
+            {
+              "name": "spi[0]",
+              "id": "e8a6d588-a8fc-4eaf-8fc4-0f2fe308f3d7",
+              "direction": "inout",
+              "side": "right",
+              "sidePosition": 15,
+              "hidden": false
+            },
+            {
+              "name": "usb-c",
+              "id": "c08bf978-d981-4d70-9778-1f48fa580e72",
+              "direction": "inout",
+              "side": "right",
+              "sidePosition": 16,
+              "hidden": false
+            }
+          ],
+          "properties": [],
+          "enabledInterfaceGroups": [],
+          "views": [],
+          "name": "DC-SCM Breakout Board",
+          "instanceName": "DC-SCM Breakout Board"
+        }
+      ],
+      "groups": [],
+      "connections": [
+        {
+          "id": "5144009f-bec2-4283-97fb-a8e55f4c533d",
+          "from": "b4e7450a-a2ee-4bc9-a82c-46c141416a56",
+          "to": "2354427f-0972-4f7f-ad0f-954fdaa08da4"
+        }
+      ]
+    },
+    {
+      "id": "639c0789-dd02-4526-8f2c-bf21e4ad06d9",
+      "name": "Agilex 5 DC-SCM Carrier Board",
+      "nodes": [
+        {
+          "id": "6c9b8a97-af4b-4a8b-9ae1-14f52dbc61fd",
+          "position": {
+            "x": 579,
+            "y": 1965
+          },
+          "width": 0,
+          "twoColumn": true,
+          "interfaces": [
+            {
+              "name": "source[0]",
+              "id": "208cde84-81a0-4206-8660-f9277044cb57",
+              "direction": "inout",
+              "side": "left",
+              "sidePosition": 0,
+              "hidden": false
+            },
+            {
+              "name": "source[1]",
+              "id": "345e265b-4b68-4fa1-b1c8-a88822afa495",
+              "direction": "inout",
+              "side": "left",
+              "sidePosition": 1,
+              "hidden": false
+            },
+            {
+              "name": "drain",
+              "id": "037b4154-b97f-4423-8297-839a3b9d7fd9",
+              "direction": "inout",
+              "side": "right",
+              "sidePosition": 1,
+              "hidden": false
+            }
+          ],
+          "properties": [],
+          "enabledInterfaceGroups": [],
+          "views": [],
+          "name": "Texas Instruments TMUX1574RSVR",
+          "instanceName": "Texas Instruments TMUX1574RSVR"
+        },
+        {
+          "id": "a5b6c371-bac1-4995-9ba4-19225e187d7f",
+          "position": {
+            "x": 1320,
+            "y": 1998
+          },
+          "width": 0,
+          "twoColumn": true,
+          "interfaces": [
+            {
+              "name": "gpio",
+              "id": "c5144047-8e41-42e0-97e7-ffc69ee9cff3",
+              "direction": "inout",
+              "side": "left",
+              "sidePosition": 0,
+              "hidden": false
+            },
+            {
+              "name": "wire to board",
+              "externalName": "wire to board_1",
+              "id": "3c57535a-03c9-4a99-8fd5-8e5d21369d6a",
+              "direction": "inout",
+              "side": "right",
+              "sidePosition": 0,
+              "hidden": false
+            }
+          ],
+          "properties": [],
+          "enabledInterfaceGroups": [],
+          "views": [],
+          "name": "Samtec MTMM-107-05-L-D-195-014",
+          "instanceName": "Samtec MTMM-107-05-L-D-195-014"
+        },
+        {
+          "id": "5294a299-ba45-4ead-818c-0f64ca2acb30",
+          "position": {
+            "x": 576,
+            "y": 2152
+          },
+          "width": 0,
+          "twoColumn": true,
+          "interfaces": [
+            {
+              "name": "source[0]",
+              "id": "cc529f7c-2951-42ea-b447-b6b78dc5998d",
+              "direction": "inout",
+              "side": "left",
+              "sidePosition": 0,
+              "hidden": false
+            },
+            {
+              "name": "source[1]",
+              "id": "4a3d24d6-250c-475e-b84a-11900a6aa8d9",
+              "direction": "inout",
+              "side": "left",
+              "sidePosition": 1,
+              "hidden": false
+            },
+            {
+              "name": "drain",
+              "id": "7e2d3d54-7065-433a-b03f-b0e7b7c6705e",
+              "direction": "inout",
+              "side": "right",
+              "sidePosition": 0,
+              "hidden": false
+            }
+          ],
+          "properties": [],
+          "enabledInterfaceGroups": [],
+          "views": [],
+          "name": "Texas Instruments TMUX1574RSVR",
+          "instanceName": "Texas Instruments TMUX1574RSVR"
+        },
+        {
+          "id": "67a7d306-ff69-4744-8b3b-8aed14840286",
+          "position": {
+            "x": 572,
+            "y": 2312
+          },
+          "width": 0,
+          "twoColumn": true,
+          "interfaces": [
+            {
+              "name": "source[0]",
+              "id": "ce804727-49b2-4aef-beca-dc53959853d8",
+              "direction": "inout",
+              "side": "left",
+              "sidePosition": 0,
+              "hidden": false
+            },
+            {
+              "name": "source[1]",
+              "id": "8da86dc1-73e5-4d05-bfe6-b36415e31e63",
+              "direction": "inout",
+              "side": "left",
+              "sidePosition": 1,
+              "hidden": false
+            },
+            {
+              "name": "drain",
+              "id": "479f7fb4-160c-4f47-8384-3bd1185c0833",
+              "direction": "inout",
+              "side": "right",
+              "sidePosition": 0,
+              "hidden": false
+            }
+          ],
+          "properties": [],
+          "enabledInterfaceGroups": [],
+          "views": [],
+          "name": "Texas Instruments TMUX1574RSVR",
+          "instanceName": "Texas Instruments TMUX1574RSVR"
+        },
+        {
+          "id": "8ece97de-2d1e-4260-a616-d09a9767d799",
+          "position": {
+            "x": 2933,
+            "y": 858
+          },
+          "width": 0,
+          "twoColumn": true,
+          "interfaces": [
+            {
+              "name": "ulpi",
+              "id": "a855eb42-5ee7-487b-941e-9a3db1984bbf",
+              "direction": "inout",
+              "side": "left",
+              "sidePosition": 0,
+              "hidden": false
+            },
+            {
+              "name": "usb",
+              "id": "bb75a446-16cc-42a8-bc9a-ceb3ee96809b",
+              "direction": "inout",
+              "side": "right",
+              "sidePosition": 0,
+              "hidden": false
+            }
+          ],
+          "properties": [],
+          "enabledInterfaceGroups": [],
+          "views": [],
+          "name": "Microchip Technology USB3320C-EZK-TR",
+          "instanceName": "Microchip Technology USB3320C-EZK-TR"
+        },
+        {
+          "id": "b985e019-607d-4770-879d-25939a95bd3e",
+          "position": {
+            "x": 2283,
+            "y": 397
+          },
+          "width": 0,
+          "twoColumn": true,
+          "interfaces": [
+            {
+              "name": "spi",
+              "id": "417b0959-4b29-4dad-b691-913d83fae075",
+              "direction": "inout",
+              "side": "right",
+              "sidePosition": 0,
+              "hidden": false
+            }
+          ],
+          "properties": [],
+          "enabledInterfaceGroups": [],
+          "views": [],
+          "name": "Winbond W25Q80DVUXIE TR",
+          "instanceName": "Winbond W25Q80DVUXIE TR"
+        },
+        {
+          "id": "d3346461-3b3f-40f7-aa71-62595cb56a2d",
+          "position": {
+            "x": 4222,
+            "y": 623
+          },
+          "width": 0,
+          "twoColumn": true,
+          "interfaces": [
+            {
+              "name": "usb",
+              "id": "8450427a-36d3-4a2b-a35c-a1a7e32a24b3",
+              "direction": "inout",
+              "side": "left",
+              "sidePosition": 0,
+              "hidden": false
+            },
+            {
+              "name": "usb-c",
+              "externalName": "usb-c_3",
+              "id": "6db8b02f-b48d-4184-99a5-cc2e1c5a386e",
+              "direction": "inout",
+              "side": "right",
+              "sidePosition": 0,
+              "hidden": false
+            }
+          ],
+          "properties": [],
+          "enabledInterfaceGroups": [],
+          "views": [],
+          "name": "Kycon KUSBX-SL2-CS1N24-B-TR",
+          "instanceName": "Kycon KUSBX-SL2-CS1N24-B-TR"
+        },
+        {
+          "id": "3b3134be-dd83-4d5e-b4eb-437f95ef83e7",
+          "position": {
+            "x": 2963,
+            "y": 622
+          },
+          "width": 0,
+          "twoColumn": true,
+          "interfaces": [
+            {
+              "name": "uart/mpsse[0]",
+              "id": "78d860c7-6a31-4c4a-babe-32f20436b6a1",
+              "direction": "inout",
+              "side": "left",
+              "sidePosition": 0,
+              "hidden": false
+            },
+            {
+              "name": "uart/mpsse[1]",
+              "id": "c4b04cbb-fb6e-4f39-a2db-4e4844512ddf",
+              "direction": "inout",
+              "side": "left",
+              "sidePosition": 1,
+              "hidden": false
+            },
+            {
+              "name": "usb",
+              "id": "bb806e6e-cb5c-456e-9c01-68aba8101bf9",
+              "direction": "inout",
+              "side": "right",
+              "sidePosition": 0,
+              "hidden": false
+            },
+            {
+              "name": "i2c",
+              "id": "32a416b8-27af-488f-92d5-29128e3b3113",
+              "direction": "inout",
+              "side": "right",
+              "sidePosition": 3,
+              "hidden": false
+            },
+            {
+              "name": "uart[2]",
+              "id": "dd83ecb5-39c6-4637-9904-1513efca2f39",
+              "direction": "inout",
+              "side": "left",
+              "sidePosition": 2,
+              "hidden": false
+            },
+            {
+              "name": "uart[3]",
+              "id": "ea6b1b58-1729-4906-aa87-06b0f1a27276",
+              "direction": "inout",
+              "side": "left",
+              "sidePosition": 3,
+              "hidden": false
+            }
+          ],
+          "properties": [],
+          "enabledInterfaceGroups": [],
+          "views": [],
+          "name": "FTDI Chip FT4232H-56Q-REEL",
+          "instanceName": "FTDI Chip FT4232H-56Q-REEL"
+        },
+        {
+          "id": "e13041ad-bbea-4b41-8603-8aac3f2399d3",
+          "position": {
+            "x": 4238,
+            "y": 1029
+          },
+          "width": 0,
+          "twoColumn": true,
+          "interfaces": [
+            {
+              "name": "usb",
+              "id": "547b1ef6-66aa-4aad-b002-c7ebcb4501ce",
+              "direction": "inout",
+              "side": "left",
+              "sidePosition": 0,
+              "hidden": false
+            },
+            {
+              "name": "usb-c",
+              "externalName": "usb-c_2",
+              "id": "6dfbc8ac-90d3-4733-9e88-5b340d62361a",
+              "direction": "inout",
+              "side": "right",
+              "sidePosition": 0,
+              "hidden": false
+            }
+          ],
+          "properties": [],
+          "enabledInterfaceGroups": [],
+          "views": [],
+          "name": "Kycon KUSBX-SL2-CS1N24-B-TR",
+          "instanceName": "Kycon KUSBX-SL2-CS1N24-B-TR"
+        },
+        {
+          "id": "32221242-1589-42d7-bc35-6a6ff59294ab",
+          "position": {
+            "x": 3744,
+            "y": 750
+          },
+          "width": 0,
+          "twoColumn": true,
+          "interfaces": [
+            {
+              "name": "i2c",
+              "id": "55da14ce-7cd6-44bf-a9b4-b7d638167e34",
+              "direction": "inout",
+              "side": "left",
+              "sidePosition": 0,
+              "hidden": false
+            }
+          ],
+          "properties": [
+            {
+              "name": "address (i2c)",
+              "id": "c5fce5d2-da84-46a7-9c8a-de8815192bdb",
+              "value": "",
+              "hidden": false
+            }
+          ],
+          "enabledInterfaceGroups": [],
+          "views": [],
+          "name": "Microchip Technology 93LC66BT-I/MC",
+          "instanceName": "Microchip Technology 93LC66BT-I/MC"
+        },
+        {
+          "id": "a11cc58f-86c3-4190-8bcb-34a8082c4a24",
+          "position": {
+            "x": 3660,
+            "y": 328
+          },
+          "width": 0,
+          "twoColumn": true,
+          "interfaces": [
+            {
+              "name": "usb",
+              "id": "7a1cf142-f5c8-4df3-af2b-60dfdfb73429",
+              "direction": "input",
+              "side": "left",
+              "sidePosition": 0,
+              "hidden": false
+            },
+            {
+              "name": "usb",
+              "id": "85751d4a-c4c2-45d8-95c8-c8ab912b2f6a",
+              "direction": "output",
+              "side": "right",
+              "sidePosition": 0,
+              "hidden": false
+            }
+          ],
+          "properties": [],
+          "enabledInterfaceGroups": [],
+          "views": [],
+          "name": "Texas Instruments HD3SS3220RNHT",
+          "instanceName": "Texas Instruments HD3SS3220RNHT"
+        },
+        {
+          "id": "a7f93f16-a879-4161-be76-8c144b5ca33a",
+          "position": {
+            "x": 4228,
+            "y": 328
+          },
+          "width": 0,
+          "twoColumn": true,
+          "interfaces": [
+            {
+              "name": "usb",
+              "id": "1bf2e986-eef3-49d1-9d80-828d9276a9ef",
+              "direction": "inout",
+              "side": "left",
+              "sidePosition": 0,
+              "hidden": false
+            },
+            {
+              "name": "usb-c",
+              "externalName": "usb-c_1",
+              "id": "e4fb7bb8-d75e-4003-804e-0a84ae972da6",
+              "direction": "inout",
+              "side": "right",
+              "sidePosition": 0,
+              "hidden": false
+            }
+          ],
+          "properties": [],
+          "enabledInterfaceGroups": [],
+          "views": [],
+          "name": "Kycon KUSBX-SL2-CS1N24-B-TR",
+          "instanceName": "Kycon KUSBX-SL2-CS1N24-B-TR"
+        },
+        {
+          "id": "aede46db-b5ce-4511-ba38-71fecedaae21",
+          "position": {
+            "x": 2931,
+            "y": 1029
+          },
+          "width": 0,
+          "twoColumn": true,
+          "interfaces": [
+            {
+              "name": "ulpi",
+              "id": "04305165-70ad-4732-aef7-479a04fc0ef8",
+              "direction": "inout",
+              "side": "left",
+              "sidePosition": 0,
+              "hidden": false
+            },
+            {
+              "name": "usb",
+              "id": "b43e8c0c-3de1-4d0b-b6d9-f7bc8c28c506",
+              "direction": "inout",
+              "side": "right",
+              "sidePosition": 0,
+              "hidden": false
+            }
+          ],
+          "properties": [],
+          "enabledInterfaceGroups": [],
+          "views": [],
+          "name": "Microchip Technology USB3320C-EZK-TR",
+          "instanceName": "Microchip Technology USB3320C-EZK-TR"
+        },
+        {
+          "id": "4af819a7-8d62-4fe5-8674-5bf2b39be873",
+          "position": {
+            "x": 3441,
+            "y": 1029
+          },
+          "width": 0,
+          "twoColumn": true,
+          "interfaces": [
+            {
+              "name": "usb",
+              "id": "eacbd3ff-09f8-4067-ad62-73d956644cf6",
+              "direction": "inout",
+              "side": "left",
+              "sidePosition": 0,
+              "hidden": false
+            },
+            {
+              "name": "usb[0]",
+              "id": "c863db3d-74e1-4471-a9af-4d945e8c2775",
+              "direction": "inout",
+              "side": "right",
+              "sidePosition": 1,
+              "hidden": false
+            },
+            {
+              "name": "usb[1]",
+              "id": "6da0085c-5f1b-467f-b0a1-0024800362b1",
+              "direction": "inout",
+              "side": "right",
+              "sidePosition": 0,
+              "hidden": false
+            }
+          ],
+          "properties": [],
+          "enabledInterfaceGroups": [],
+          "views": [],
+          "name": "Microchip Technology USB2422-I/MJ",
+          "instanceName": "Microchip Technology USB2422-I/MJ"
+        },
+        {
+          "id": "e62b79e9-cc12-4950-9d10-0a73e1982991",
+          "position": {
+            "x": 2947,
+            "y": 1169
+          },
+          "width": 0,
+          "twoColumn": true,
+          "interfaces": [
+            {
+              "name": "ethernet",
+              "id": "847172a0-78bf-4edd-86b5-0264d33b67ae",
+              "direction": "inout",
+              "side": "right",
+              "sidePosition": 0,
+              "hidden": false
+            },
+            {
+              "name": "rgmii",
+              "id": "6e7d8087-10f2-4543-9cea-57bf22983a3c",
+              "direction": "inout",
+              "side": "left",
+              "sidePosition": 0,
+              "hidden": false
+            }
+          ],
+          "properties": [],
+          "enabledInterfaceGroups": [],
+          "views": [],
+          "name": "Microchip Technology KSZ9131RNXC",
+          "instanceName": "Microchip Technology KSZ9131RNXC"
+        },
+        {
+          "id": "6365e640-904e-498a-82fc-c520293bc379",
+          "position": {
+            "x": 4248,
+            "y": 1169
+          },
+          "width": 0,
+          "twoColumn": true,
+          "interfaces": [
+            {
+              "name": "rj45",
+              "externalName": "rj45",
+              "id": "eef9e74d-29b8-4c54-8bb8-4f9fbbb6a366",
+              "direction": "inout",
+              "side": "right",
+              "sidePosition": 0,
+              "hidden": false
+            },
+            {
+              "name": "ethernet",
+              "id": "f3416318-1fa9-4fe5-a588-bd020e9147f8",
+              "direction": "inout",
+              "side": "left",
+              "sidePosition": 0,
+              "hidden": false
+            }
+          ],
+          "properties": [],
+          "enabledInterfaceGroups": [],
+          "views": [],
+          "name": "Würth Elektronik 7498111120R",
+          "instanceName": "Würth Elektronik 7498111120R"
+        },
+        {
+          "id": "4627566d-d5b7-4b74-85da-b71a0dd324dc",
+          "position": {
+            "x": 4254,
+            "y": 1301
+          },
+          "width": 0,
+          "twoColumn": true,
+          "interfaces": [
+            {
+              "name": "sdio",
+              "id": "e2cccabf-c864-491a-8010-ef20a1a9d23f",
+              "direction": "inout",
+              "side": "left",
+              "sidePosition": 0,
+              "hidden": false
+            },
+            {
+              "name": "micro sd-card",
+              "externalName": "micro sd-card",
+              "id": "4b0312be-2d3b-47d1-875e-cd7dac50767b",
+              "direction": "inout",
+              "side": "right",
+              "sidePosition": 0,
+              "hidden": false
+            }
+          ],
+          "properties": [],
+          "enabledInterfaceGroups": [],
+          "views": [],
+          "name": "Amphenol 1140084168",
+          "instanceName": "Amphenol 1140084168"
+        },
+        {
+          "id": "7693573f-fa49-42fe-b6ed-418ea4479b88",
+          "position": {
+            "x": 4258,
+            "y": 1573
+          },
+          "width": 0,
+          "twoColumn": true,
+          "interfaces": [
+            {
+              "name": "dp",
+              "id": "9d51c589-17eb-46cb-b3e4-3513a10eb974",
+              "direction": "inout",
+              "side": "left",
+              "sidePosition": 0,
+              "hidden": false
+            },
+            {
+              "name": "mini dp",
+              "externalName": "mini dp",
+              "id": "bbbaedd1-259f-4a14-8299-253fc9635d9f",
+              "direction": "inout",
+              "side": "right",
+              "sidePosition": 0,
+              "hidden": false
+            }
+          ],
+          "properties": [],
+          "enabledInterfaceGroups": [],
+          "views": [],
+          "name": "Pulse Electronics E9320-001-01",
+          "instanceName": "Pulse Electronics E9320-001-01"
+        },
+        {
+          "id": "da19b72b-612b-4b97-b3c7-5bb1470f5e8e",
+          "position": {
+            "x": 4248,
+            "y": 1437
+          },
+          "width": 0,
+          "twoColumn": true,
+          "interfaces": [
+            {
+              "name": "gpio",
+              "id": "ff06a7dc-1270-4510-b22f-b9c73e35f28f",
+              "direction": "inout",
+              "side": "left",
+              "sidePosition": 0,
+              "hidden": false
+            },
+            {
+              "name": "wire to board",
+              "externalName": "wire to board",
+              "id": "92ccfebb-6d33-42a8-9a07-d53cde4c43fe",
+              "direction": "inout",
+              "side": "right",
+              "sidePosition": 0,
+              "hidden": false
+            }
+          ],
+          "properties": [],
+          "enabledInterfaceGroups": [],
+          "views": [],
+          "name": "TE Connectivity 1-1734742-6",
+          "instanceName": "TE Connectivity 1-1734742-6"
+        },
+        {
+          "id": "1302e19e-1156-48a9-83e6-e1b6051db048",
+          "position": {
+            "x": 2951,
+            "y": 295
+          },
+          "width": 0,
+          "twoColumn": true,
+          "interfaces": [
+            {
+              "name": "pcie",
+              "id": "619c74bf-70d9-48dc-8f12-fed23fec80d2",
+              "direction": "inout",
+              "side": "left",
+              "sidePosition": 0,
+              "hidden": false
+            },
+            {
+              "name": "usb[0]",
+              "id": "b8ccd349-1f32-46c0-b282-4a5f1508b584",
+              "direction": "inout",
+              "side": "right",
+              "sidePosition": 0,
+              "hidden": false
+            },
+            {
+              "name": "usb[1]",
+              "id": "5ffc1f77-f98a-496e-9f3e-0daed1ef46f8",
+              "direction": "inout",
+              "side": "right",
+              "sidePosition": 1,
+              "hidden": false
+            },
+            {
+              "name": "usb[2]",
+              "id": "5297c8fb-b3fb-49f4-b90c-35befddc4bb5",
+              "direction": "inout",
+              "side": "right",
+              "sidePosition": 2,
+              "hidden": false
+            },
+            {
+              "name": "usb[3]",
+              "id": "d09ad97c-9dca-40de-85a6-f3dcf90a57e1",
+              "direction": "inout",
+              "side": "right",
+              "sidePosition": 3,
+              "hidden": false
+            },
+            {
+              "name": "spi",
+              "id": "fc9062cf-e8ee-4ff6-a563-708f5ccdc3da",
+              "direction": "inout",
+              "side": "left",
+              "sidePosition": 3,
+              "hidden": false
+            }
+          ],
+          "properties": [],
+          "enabledInterfaceGroups": [],
+          "views": [],
+          "name": "Renesas Electronics UPD720201K8-701-BAC-A",
+          "instanceName": "Renesas Electronics UPD720201K8-701-BAC-A"
+        },
+        {
+          "id": "41a9588b-503c-4bae-962e-df045f62b6bc",
+          "position": {
+            "x": 1312,
+            "y": 2253
+          },
+          "width": 0,
+          "twoColumn": true,
+          "interfaces": [
+            {
+              "name": "spi",
+              "id": "084a9b16-786b-4777-ab4b-10eaec709593",
+              "direction": "inout",
+              "side": "left",
+              "sidePosition": 0,
+              "hidden": false
+            },
+            {
+              "name": "SPI flash socket",
+              "externalName": "SPI flash socket",
+              "id": "52aefaa0-b6d6-4e97-bb4a-616621c89a2c",
+              "direction": "inout",
+              "side": "right",
+              "sidePosition": 0,
+              "hidden": false
+            }
+          ],
+          "properties": [],
+          "enabledInterfaceGroups": [],
+          "views": [],
+          "name": "LOTES ACA-SPI-006-K01",
+          "instanceName": "LOTES ACA-SPI-006-K01"
+        },
+        {
+          "id": "53fadde7-d7ec-4d48-abc8-d5696c46ae04",
+          "position": {
+            "x": 1313,
+            "y": 2430
+          },
+          "width": 0,
+          "twoColumn": true,
+          "interfaces": [
+            {
+              "name": "spi",
+              "id": "231d9b0b-adca-464d-b40c-1e4c29709cf1",
+              "direction": "inout",
+              "side": "left",
+              "sidePosition": 0,
+              "hidden": false
+            },
+            {
+              "name": "SPI flash socket",
+              "externalName": "SPI flash socket_1",
+              "id": "a819783e-7ea1-45a3-bdb5-353144d9779b",
+              "direction": "inout",
+              "side": "right",
+              "sidePosition": 0,
+              "hidden": false
+            }
+          ],
+          "properties": [],
+          "enabledInterfaceGroups": [],
+          "views": [],
+          "name": "LOTES ACA-SPI-006-K01",
+          "instanceName": "LOTES ACA-SPI-006-K01"
+        },
+        {
+          "id": "709a1083-18af-41d3-b749-562d7d3453d3",
+          "position": {
+            "x": 1719,
+            "y": 587
+          },
+          "width": 0,
+          "twoColumn": true,
+          "interfaces": [
+            {
+              "name": "DC_SCM_INTRUSION_B",
+              "id": "17908a05-7298-4067-9dc3-78a40239f51b",
+              "direction": "inout",
+              "side": "left",
+              "sidePosition": 5,
+              "hidden": false
+            },
+            {
+              "name": "DC_SCM_SPI_SCMCNTRL_IRQ0_B",
+              "id": "acb5a3dc-b349-4561-87cb-4eac31e4635a",
+              "direction": "inout",
+              "side": "left",
+              "sidePosition": 6,
+              "hidden": false
+            },
+            {
+              "name": "DC_SCM_STBY_EN",
+              "id": "c4992ba7-2f68-46b7-a392-cc47758675f9",
+              "direction": "inout",
+              "side": "left",
+              "sidePosition": 7,
+              "hidden": false
+            },
+            {
+              "name": "clk",
+              "id": "dab74da9-7bed-4865-a92c-0ab337f6ec1f",
+              "direction": "inout",
+              "side": "left",
+              "sidePosition": 0,
+              "hidden": false
+            },
+            {
+              "name": "dp",
+              "id": "4c073d8c-47f4-4ad1-a539-dca09a3cbd91",
+              "direction": "inout",
+              "side": "right",
+              "sidePosition": 29,
+              "hidden": false
+            },
+            {
+              "name": "espi",
+              "id": "f9e12699-bcb4-4a7f-8995-4e7d9369e7c2",
+              "direction": "inout",
+              "side": "left",
+              "sidePosition": 11,
+              "hidden": false
+            },
+            {
+              "name": "i2c[13]",
+              "id": "e1ca1374-21b6-43d1-823c-747449f12631",
+              "direction": "inout",
+              "side": "left",
+              "sidePosition": 23,
+              "hidden": false
+            },
+            {
+              "name": "i2c[15]",
+              "id": "c2ac9bfb-498e-473b-815f-569e3bb61396",
+              "direction": "inout",
+              "side": "left",
+              "sidePosition": 25,
+              "hidden": false
+            },
+            {
+              "name": "i2c[17]",
+              "id": "942d915c-4699-45dc-bc77-db7e1d6f3efa",
+              "direction": "inout",
+              "side": "left",
+              "sidePosition": 27,
+              "hidden": false
+            },
+            {
+              "name": "i2c[19]",
+              "id": "fd32debf-56fd-4b55-8153-ce72516fe980",
+              "direction": "inout",
+              "side": "left",
+              "sidePosition": 29,
+              "hidden": false
+            },
+            {
+              "name": "i2c[1]",
+              "id": "d7fab9fe-cbbc-4e03-bb4a-c0ad24fca961",
+              "direction": "inout",
+              "side": "left",
+              "sidePosition": 13,
+              "hidden": false
+            },
+            {
+              "name": "i2c[3]",
+              "id": "b403d903-4dd9-401f-94c2-fa5784453eab",
+              "direction": "inout",
+              "side": "left",
+              "sidePosition": 15,
+              "hidden": false
+            },
+            {
+              "name": "i2c[5]",
+              "id": "5ede561b-9a9e-4f83-b24c-2011ce3cc210",
+              "direction": "inout",
+              "side": "left",
+              "sidePosition": 17,
+              "hidden": false
+            },
+            {
+              "name": "i2c[7]",
+              "id": "6db24d01-e390-4cd9-a32d-615e4b86411f",
+              "direction": "inout",
+              "side": "left",
+              "sidePosition": 19,
+              "hidden": false
+            },
+            {
+              "name": "i2c[9]",
+              "id": "ed43a5ba-3f7a-4064-87cf-7ada7ea5c65b",
+              "direction": "inout",
+              "side": "left",
+              "sidePosition": 21,
+              "hidden": false
+            },
+            {
+              "name": "mitysom_interface",
+              "externalName": "mitysom_interface",
+              "id": "22fe0a25-4337-472c-adad-d66a89cf9d78",
+              "direction": "inout",
+              "side": "right",
+              "sidePosition": 0,
+              "hidden": false
+            },
+            {
+              "name": "sdio",
+              "id": "6c2b923f-c16d-4283-8e32-0b0e3a3fe0eb",
+              "direction": "inout",
+              "side": "right",
+              "sidePosition": 21,
+              "hidden": false
+            },
+            {
+              "name": "sfp",
+              "id": "266db700-10a4-4813-bd2f-97a01d8ed934",
+              "direction": "inout",
+              "side": "right",
+              "sidePosition": 25,
+              "hidden": false
+            },
+            {
+              "name": "spi",
+              "id": "2d9e810b-fe7b-4b10-bb65-7772f98da9b1",
+              "direction": "inout",
+              "side": "right",
+              "sidePosition": 16,
+              "hidden": false
+            },
+            {
+              "name": "usb[0]",
+              "id": "8f690558-0ad5-41f4-9b03-ed484e2bf64e",
+              "direction": "inout",
+              "side": "left",
+              "sidePosition": 34,
+              "hidden": false
+            },
+            {
+              "name": "usb[1]",
+              "id": "fa76ce6e-bbeb-4e13-bc98-88083c5bc45f",
+              "direction": "inout",
+              "side": "right",
+              "sidePosition": 10,
+              "hidden": false
+            },
+            {
+              "name": "usb[2]",
+              "id": "63d19098-bcee-4465-97fa-9f413e6e8a29",
+              "direction": "inout",
+              "side": "right",
+              "sidePosition": 11,
+              "hidden": false
+            },
+            {
+              "name": "DC_SCM_STBY_RDY",
+              "id": "bae7264b-032a-47b7-8491-74a7a2deec9d",
+              "direction": "inout",
+              "side": "left",
+              "sidePosition": 8,
+              "hidden": false
+            },
+            {
+              "name": "DC_SCM_STBY_RST_B",
+              "id": "91b19f75-4fa6-4a1a-83dd-e3d4bfaaf2d6",
+              "direction": "inout",
+              "side": "left",
+              "sidePosition": 9,
+              "hidden": false
+            },
+            {
+              "name": "PCIE_HPM_SCM_PERST_B",
+              "id": "f8caedbc-28e4-4e5d-a93b-3c02e317df69",
+              "direction": "inout",
+              "side": "left",
+              "sidePosition": 10,
+              "hidden": false
+            },
+            {
+              "name": "i2c[0]",
+              "id": "fa41afe8-bcfd-4ba1-a3e8-e686e8d945fa",
+              "direction": "inout",
+              "side": "left",
+              "sidePosition": 12,
+              "hidden": false
+            },
+            {
+              "name": "i2c[12]",
+              "id": "4713b6c5-4cfa-41c0-bfbb-82c7c9c4d192",
+              "direction": "inout",
+              "side": "left",
+              "sidePosition": 22,
+              "hidden": false
+            },
+            {
+              "name": "i2c[14]",
+              "id": "80f91615-becf-425f-a747-596c24278b1f",
+              "direction": "inout",
+              "side": "left",
+              "sidePosition": 24,
+              "hidden": false
+            },
+            {
+              "name": "i2c[16]",
+              "id": "bc3d10dc-075c-4929-88f9-13b38a5add07",
+              "direction": "inout",
+              "side": "left",
+              "sidePosition": 26,
+              "hidden": false
+            },
+            {
+              "name": "i2c[18]",
+              "id": "7961c898-e90b-480b-8e16-91f8079dd145",
+              "direction": "inout",
+              "side": "left",
+              "sidePosition": 28,
+              "hidden": false
+            },
+            {
+              "name": "i2c[2]",
+              "id": "b6275fd5-8b43-4bad-81e2-c7d56b4a2663",
+              "direction": "inout",
+              "side": "left",
+              "sidePosition": 14,
+              "hidden": false
+            },
+            {
+              "name": "i2c[4]",
+              "id": "aa2a0855-eba3-4385-a173-25c831a258b7",
+              "direction": "inout",
+              "side": "left",
+              "sidePosition": 16,
+              "hidden": false
+            },
+            {
+              "name": "i2c[6]",
+              "id": "50e232eb-8e18-4907-8142-24256457e8ae",
+              "direction": "inout",
+              "side": "left",
+              "sidePosition": 18,
+              "hidden": false
+            },
+            {
+              "name": "i2c[8]",
+              "id": "b83c95d3-041a-4cc3-b89e-a9225d8ed4a0",
+              "direction": "inout",
+              "side": "left",
+              "sidePosition": 20,
+              "hidden": false
+            },
+            {
+              "name": "jtag[0]",
+              "id": "444512b3-a35a-420f-9b6d-097c204eda2e",
+              "direction": "inout",
+              "side": "left",
+              "sidePosition": 35,
+              "hidden": false
+            },
+            {
+              "name": "jtag[1]",
+              "id": "d19c68bc-59f2-4309-a50c-df2790e16dc4",
+              "direction": "inout",
+              "side": "right",
+              "sidePosition": 1,
+              "hidden": false
+            },
+            {
+              "name": "ltpi",
+              "id": "75e5da24-6649-450e-80fa-42133b10d4d4",
+              "direction": "inout",
+              "side": "left",
+              "sidePosition": 36,
+              "hidden": false
+            },
+            {
+              "name": "ncsi",
+              "id": "de4437aa-a7eb-49bf-9bee-e0177800a2f6",
+              "direction": "inout",
+              "side": "left",
+              "sidePosition": 37,
+              "hidden": false
+            },
+            {
+              "name": "qspi",
+              "id": "cf5193c4-a833-438d-baa7-f464ae82b709",
+              "direction": "inout",
+              "side": "right",
+              "sidePosition": 31,
+              "hidden": false
+            },
+            {
+              "name": "rgmii",
+              "id": "4f095eee-27b7-4ab4-b2c0-4f384a434c78",
+              "direction": "inout",
+              "side": "right",
+              "sidePosition": 17,
+              "hidden": false
+            },
+            {
+              "name": "uart[0]",
+              "id": "10845a83-536f-450d-91be-5cf83fb3bcc2",
+              "direction": "inout",
+              "side": "left",
+              "sidePosition": 4,
+              "hidden": false
+            },
+            {
+              "name": "uart[1]",
+              "id": "3b84d104-e9c1-4082-bdd7-4cbac8d74c2a",
+              "direction": "inout",
+              "side": "right",
+              "sidePosition": 4,
+              "hidden": false
+            },
+            {
+              "name": "ulpi[0]",
+              "id": "df4feeca-68aa-4e8f-9466-215aeeca91e2",
+              "direction": "inout",
+              "side": "right",
+              "sidePosition": 8,
+              "hidden": false
+            },
+            {
+              "name": "ulpi[1]",
+              "id": "1a342a13-5d23-4cd6-882b-0d5b9d983611",
+              "direction": "inout",
+              "side": "right",
+              "sidePosition": 13,
+              "hidden": false
+            },
+            {
+              "name": "pcie[0]",
+              "id": "49479259-9df0-4636-87a6-8d7fbe433ab7",
+              "direction": "inout",
+              "side": "left",
+              "sidePosition": 2,
+              "hidden": false
+            },
+            {
+              "name": "pcie[1]",
+              "id": "01b03356-bf40-4514-8b7a-363eb1a9c6b5",
+              "direction": "inout",
+              "side": "left",
+              "sidePosition": 3,
+              "hidden": false
+            },
+            {
+              "name": "pcie x4",
+              "id": "9a0e425e-b3b3-4ce5-99b8-b9c7d1b72299",
+              "direction": "inout",
+              "side": "left",
+              "sidePosition": 1,
+              "hidden": false
+            }
+          ],
+          "properties": [],
+          "enabledInterfaceGroups": [],
+          "views": [],
+          "name": "MitySOM-A5E Mini Connector",
+          "instanceName": "MitySOM-A5E Mini Connector"
+        },
+        {
+          "id": "d8977618-931e-415f-902e-70d2382288d8",
+          "position": {
+            "x": -936,
+            "y": 451
+          },
+          "width": 0,
+          "twoColumn": true,
+          "interfaces": [
+            {
+              "name": "DC_SCM_STBY_RDY",
+              "id": "ed0bc241-76b7-4155-bede-5bb37b2c35d4",
+              "direction": "inout",
+              "side": "right",
+              "sidePosition": 12,
+              "hidden": false
+            },
+            {
+              "name": "DC_SCM_STBY_RST_B",
+              "id": "9bae1573-1bc4-45b6-890d-98e912a24692",
+              "direction": "inout",
+              "side": "right",
+              "sidePosition": 13,
+              "hidden": false
+            },
+            {
+              "name": "PCIE_HPM_SCM_PERST_B",
+              "id": "d6341a09-435a-4c72-baba-e66deb3b4a14",
+              "direction": "inout",
+              "side": "right",
+              "sidePosition": 14,
+              "hidden": false
+            },
+            {
+              "name": "dc-scm 2.1",
+              "externalName": "dc-scm 2.1",
+              "id": "b4e7450a-a2ee-4bc9-a82c-46c141416a56",
+              "direction": "inout",
+              "side": "left",
+              "sidePosition": 0,
+              "hidden": false
+            },
+            {
+              "name": "i2c/i3c[13]",
+              "id": "17673fca-a5fc-4eab-9f79-02f19860523f",
+              "direction": "inout",
+              "side": "right",
+              "sidePosition": 27,
+              "hidden": false
+            },
+            {
+              "name": "i2c/i3c[15]",
+              "id": "01fb80f3-a555-4abb-a31f-7f8513707715",
+              "direction": "inout",
+              "side": "right",
+              "sidePosition": 29,
+              "hidden": false
+            },
+            {
+              "name": "i2c/i3c[17]",
+              "id": "47ebe203-d67a-4783-88af-384fe4582df2",
+              "direction": "inout",
+              "side": "right",
+              "sidePosition": 31,
+              "hidden": false
+            },
+            {
+              "name": "i2c/i3c[19]",
+              "id": "1720fe2e-ddbe-40c1-9858-251416339314",
+              "direction": "inout",
+              "side": "right",
+              "sidePosition": 33,
+              "hidden": false
+            },
+            {
+              "name": "i2c[1]",
+              "id": "78c2eb9b-8411-47fc-9f17-02dd658d1444",
+              "direction": "inout",
+              "side": "right",
+              "sidePosition": 17,
+              "hidden": false
+            },
+            {
+              "name": "i2c[3]",
+              "id": "c78df94c-6b6e-4e70-9efe-57bf2a11c6e9",
+              "direction": "inout",
+              "side": "right",
+              "sidePosition": 19,
+              "hidden": false
+            },
+            {
+              "name": "i2c[5]",
+              "id": "2949366b-8a19-44a0-81d9-4d07d5b79a05",
+              "direction": "inout",
+              "side": "right",
+              "sidePosition": 21,
+              "hidden": false
+            },
+            {
+              "name": "i2c[7]",
+              "id": "cf8877f4-e0d4-4711-88ad-e51238452a35",
+              "direction": "inout",
+              "side": "right",
+              "sidePosition": 23,
+              "hidden": false
+            },
+            {
+              "name": "i2c[9]",
+              "id": "42d67983-f52e-4124-bcbe-4d9b837c1d29",
+              "direction": "inout",
+              "side": "right",
+              "sidePosition": 25,
+              "hidden": false
+            },
+            {
+              "name": "jtag",
+              "id": "e76438f9-0681-44c8-916d-474481c2e30c",
+              "direction": "inout",
+              "side": "right",
+              "sidePosition": 39,
+              "hidden": false
+            },
+            {
+              "name": "ncsi",
+              "id": "60232faf-7876-4a6a-9c1e-df98d70e6f5d",
+              "direction": "inout",
+              "side": "right",
+              "sidePosition": 41,
+              "hidden": false
+            },
+            {
+              "name": "uart",
+              "id": "3011b31c-7375-40f1-bb28-62350c8a1f4f",
+              "direction": "inout",
+              "side": "right",
+              "sidePosition": 8,
+              "hidden": false
+            },
+            {
+              "name": "peci",
+              "id": "c7edba6c-df78-493c-a2b6-51cbba6b8aff",
+              "direction": "inout",
+              "side": "right",
+              "sidePosition": 36,
+              "hidden": false
+            },
+            {
+              "name": "ltpi",
+              "id": "8b5dd681-14ef-417e-ab32-6e2c6ef9069a",
+              "direction": "inout",
+              "side": "right",
+              "sidePosition": 40,
+              "hidden": false
+            },
+            {
+              "name": "pcie[0]",
+              "id": "85440bc6-332a-4bd9-8e2f-3a57ee73a5b2",
+              "direction": "inout",
+              "side": "right",
+              "sidePosition": 6,
+              "hidden": false
+            },
+            {
+              "name": "pcie[1]",
+              "id": "72d0ddbc-a9a4-4042-8e85-9a34a7d32394",
+              "direction": "inout",
+              "side": "right",
+              "sidePosition": 7,
+              "hidden": false
+            },
+            {
+              "name": "pcie[2]",
+              "id": "bfd4eb9b-3c90-4c92-85ba-11cae9929295",
+              "direction": "inout",
+              "side": "right",
+              "sidePosition": 4,
+              "hidden": false
+            },
+            {
+              "name": "qspi",
+              "id": "2a4fdf54-4e19-4ace-b898-4b124ad91b20",
+              "direction": "inout",
+              "side": "right",
+              "sidePosition": 46,
+              "hidden": false
+            },
+            {
+              "name": "DC_SCM_INTRUSION_B",
+              "id": "39c3d5ae-fa56-470a-96ae-79fbf67e0f12",
+              "direction": "inout",
+              "side": "right",
+              "sidePosition": 9,
+              "hidden": false
+            },
+            {
+              "name": "DC_SCM_SPI_SCMCNTRL_IRQ0_B",
+              "id": "52e8c3a8-da3b-4b2d-ba5f-474e5b2a4588",
+              "direction": "inout",
+              "side": "right",
+              "sidePosition": 10,
+              "hidden": false
+            },
+            {
+              "name": "DC_SCM_STBY_EN",
+              "id": "0e79b116-ffe9-4924-a235-8f44bade7ea4",
+              "direction": "inout",
+              "side": "right",
+              "sidePosition": 11,
+              "hidden": false
+            },
+            {
+              "name": "espi",
+              "id": "f24065f8-d798-4954-a546-a1a96275805d",
+              "direction": "inout",
+              "side": "right",
+              "sidePosition": 15,
+              "hidden": false
+            },
+            {
+              "name": "i2c/i3c[12]",
+              "id": "c2792e75-a60c-47b0-9bc0-744f64fd99c1",
+              "direction": "inout",
+              "side": "right",
+              "sidePosition": 26,
+              "hidden": false
+            },
+            {
+              "name": "i2c/i3c[14]",
+              "id": "214a5f7c-002a-4243-9af7-6309e711d579",
+              "direction": "inout",
+              "side": "right",
+              "sidePosition": 28,
+              "hidden": false
+            },
+            {
+              "name": "i2c/i3c[16]",
+              "id": "2e32a409-f4d0-496a-b458-e3807251e96a",
+              "direction": "inout",
+              "side": "right",
+              "sidePosition": 30,
+              "hidden": false
+            },
+            {
+              "name": "i2c/i3c[18]",
+              "id": "eabf9bc3-e4aa-4a90-bfa8-e78c7fbcf38d",
+              "direction": "inout",
+              "side": "right",
+              "sidePosition": 32,
+              "hidden": false
+            },
+            {
+              "name": "i2c[0]",
+              "id": "032b21bf-1342-4cf0-b620-124c1c00042a",
+              "direction": "inout",
+              "side": "right",
+              "sidePosition": 16,
+              "hidden": false
+            },
+            {
+              "name": "i2c[2]",
+              "id": "83d8f2a8-f3b8-4c7b-85a2-43d76f8bb78a",
+              "direction": "inout",
+              "side": "right",
+              "sidePosition": 18,
+              "hidden": false
+            },
+            {
+              "name": "i2c[4]",
+              "id": "2f43d022-b313-45af-8528-407331e54551",
+              "direction": "inout",
+              "side": "right",
+              "sidePosition": 20,
+              "hidden": false
+            },
+            {
+              "name": "i2c[6]",
+              "id": "66151cf0-4130-4a98-aa44-bc800549cd7f",
+              "direction": "inout",
+              "side": "right",
+              "sidePosition": 22,
+              "hidden": false
+            },
+            {
+              "name": "i2c[8]",
+              "id": "365c140f-c65b-48cc-83aa-58fe3ecf607c",
+              "direction": "inout",
+              "side": "right",
+              "sidePosition": 24,
+              "hidden": false
+            },
+            {
+              "name": "pcie x4",
+              "id": "462e22e8-0c5e-4d32-83e7-6ba6c6775abf",
+              "direction": "inout",
+              "side": "right",
+              "sidePosition": 5,
+              "hidden": false
+            },
+            {
+              "name": "refclk",
+              "id": "fcc0803e-50c1-4c89-a968-a1de65b4baef",
+              "direction": "inout",
+              "side": "right",
+              "sidePosition": 2,
+              "hidden": false
+            },
+            {
+              "name": "spi[0]",
+              "id": "b8efc45c-2d89-4684-931a-a481caa5475b",
+              "direction": "inout",
+              "side": "right",
+              "sidePosition": 45,
+              "hidden": false
+            },
+            {
+              "name": "spi[1]",
+              "id": "51c79aa5-4cc3-46c1-a684-af9cf6759332",
+              "direction": "inout",
+              "side": "right",
+              "sidePosition": 34,
+              "hidden": false
+            },
+            {
+              "name": "usb[0]",
+              "id": "012b9aeb-fd43-41b4-802d-7871fa0d6579",
+              "direction": "inout",
+              "side": "right",
+              "sidePosition": 47,
+              "hidden": false
+            },
+            {
+              "name": "usb[1]",
+              "id": "5f499db0-c0f4-4dad-87e2-4e4d0c31d07e",
+              "direction": "inout",
+              "side": "right",
+              "sidePosition": 38,
+              "hidden": false
+            },
+            {
+              "name": "rootport_refclk",
+              "id": "1ed0025d-dcef-41d1-9799-a3eda27096c3",
+              "direction": "inout",
+              "side": "right",
+              "sidePosition": 3,
+              "hidden": false
+            }
+          ],
+          "properties": [],
+          "enabledInterfaceGroups": [],
+          "views": [],
+          "name": "DC-SCM 2.1 Edge",
+          "instanceName": "DC-SCM 2.1 Edge"
+        },
+        {
+          "id": "2e97c71f-64bb-427a-b1b1-e947de8a39fb",
+          "position": {
+            "x": 835,
+            "y": 487
+          },
+          "width": 0,
+          "twoColumn": true,
+          "interfaces": [
+            {
+              "name": "clk_out[0]",
+              "id": "b26b6b2b-5c9d-467e-b49a-41a6064ad3a4",
+              "direction": "inout",
+              "side": "right",
+              "sidePosition": 0,
+              "hidden": false
+            },
+            {
+              "name": "clk_out[1]",
+              "id": "651343b1-f831-42c0-b7d8-045e2e7cbc42",
+              "direction": "inout",
+              "side": "right",
+              "sidePosition": 1,
+              "hidden": false
+            },
+            {
+              "name": "clk_in",
+              "id": "0b459613-e252-4089-b1bc-c1fbcdcaf00b",
+              "direction": "inout",
+              "side": "left",
+              "sidePosition": 0,
+              "hidden": false
+            }
+          ],
+          "properties": [],
+          "enabledInterfaceGroups": [],
+          "views": [],
+          "name": "Microchip Technology SY75602BTWL-TR",
+          "instanceName": "Microchip Technology SY75602BTWL-TR"
+        },
+        {
+          "id": "3c68fed1-acec-45bb-b349-285f4ee36c03",
+          "position": {
+            "x": 351,
+            "y": 295
+          },
+          "width": 0,
+          "twoColumn": true,
+          "interfaces": [
+            {
+              "name": "clk[0]",
+              "id": "6f91c818-189c-4b8d-8f7a-2484503e5b6b",
+              "direction": "inout",
+              "side": "right",
+              "sidePosition": 0,
+              "hidden": false
+            },
+            {
+              "name": "clk[1]",
+              "id": "0f25342b-7ba2-44c9-97ac-12b82488a403",
+              "direction": "inout",
+              "side": "right",
+              "sidePosition": 1,
+              "hidden": false
+            },
+            {
+              "name": "clk[2]",
+              "id": "bdf86caf-f585-4baf-ab1a-06b1f0b91931",
+              "direction": "inout",
+              "side": "right",
+              "sidePosition": 2,
+              "hidden": false
+            },
+            {
+              "name": "clk[3]",
+              "id": "e7bdcfa8-6ea3-4183-bc64-0a701039f605",
+              "direction": "inout",
+              "side": "right",
+              "sidePosition": 3,
+              "hidden": false
+            },
+            {
+              "name": "clk_in",
+              "id": "e7aa8185-0f9b-4c76-a02a-5e3ed47a2bef",
+              "direction": "inout",
+              "side": "left",
+              "sidePosition": 0,
+              "hidden": false
+            }
+          ],
+          "properties": [],
+          "enabledInterfaceGroups": [],
+          "views": [],
+          "name": "Microchip Technology SY75604BTWL-TR",
+          "instanceName": "Microchip Technology SY75604BTWL-TR"
+        },
+        {
+          "id": "3f47507f-7a7d-44d8-bcc7-ab48742079ff",
+          "position": {
+            "x": 420,
+            "y": 1608
+          },
+          "width": 0,
+          "twoColumn": true,
+          "interfaces": [
+            {
+              "name": "peci",
+              "id": "484646bc-ca9f-4cb3-a622-88284ac94be5",
+              "direction": "inout",
+              "side": "left",
+              "sidePosition": 0,
+              "hidden": false
+            },
+            {
+              "name": "i2c",
+              "id": "8596e34c-d1f7-47fd-9a0c-8f37ffe69eb3",
+              "direction": "inout",
+              "side": "right",
+              "sidePosition": 0,
+              "hidden": false
+            }
+          ],
+          "properties": [
+            {
+              "name": "address (i2c)",
+              "id": "73313063-305c-4aaa-bcf7-65ad1c5695ef",
+              "value": "0x2A",
+              "hidden": false
+            }
+          ],
+          "enabledInterfaceGroups": [],
+          "views": [],
+          "name": "Analog Devices MAX6621AUB+",
+          "instanceName": "Analog Devices MAX6621AUB+"
+        }
+      ],
+      "groups": [],
+      "connections": [
+        {
+          "id": "181dbfa5-f53a-45b0-800d-e8652768247b",
+          "from": "037b4154-b97f-4423-8297-839a3b9d7fd9",
+          "to": "c5144047-8e41-42e0-97e7-ffc69ee9cff3"
+        },
+        {
+          "id": "a6529528-e897-42fa-b528-d40455ada939",
+          "from": "85751d4a-c4c2-45d8-95c8-c8ab912b2f6a",
+          "to": "1bf2e986-eef3-49d1-9d80-828d9276a9ef"
+        },
+        {
+          "id": "17c5fb1c-91a2-4464-9c1d-bca07a220073",
+          "from": "bb806e6e-cb5c-456e-9c01-68aba8101bf9",
+          "to": "8450427a-36d3-4a2b-a35c-a1a7e32a24b3"
+        },
+        {
+          "id": "c463e5fd-b4cd-493f-b881-d5ee53715870",
+          "from": "b43e8c0c-3de1-4d0b-b6d9-f7bc8c28c506",
+          "to": "eacbd3ff-09f8-4067-ad62-73d956644cf6"
+        },
+        {
+          "id": "b21fbc77-2784-4aaa-b350-d592e0745902",
+          "from": "6da0085c-5f1b-467f-b0a1-0024800362b1",
+          "to": "547b1ef6-66aa-4aad-b002-c7ebcb4501ce"
+        },
+        {
+          "id": "911d8362-a458-4c2f-8485-ad8beaffff9f",
+          "from": "847172a0-78bf-4edd-86b5-0264d33b67ae",
+          "to": "f3416318-1fa9-4fe5-a588-bd020e9147f8"
+        },
+        {
+          "id": "067c873c-536a-464a-8f8e-137496680bee",
+          "from": "417b0959-4b29-4dad-b691-913d83fae075",
+          "to": "fc9062cf-e8ee-4ff6-a563-708f5ccdc3da"
+        },
+        {
+          "id": "40aebb0e-f434-4d6b-9bc2-657e679950c7",
+          "from": "bb75a446-16cc-42a8-bc9a-ceb3ee96809b",
+          "to": "d09ad97c-9dca-40de-85a6-f3dcf90a57e1"
+        },
+        {
+          "id": "bbb8451a-a039-4c47-8f2e-d21b7a99011e",
+          "from": "5ffc1f77-f98a-496e-9f3e-0daed1ef46f8",
+          "to": "7a1cf142-f5c8-4df3-af2b-60dfdfb73429"
+        },
+        {
+          "id": "9c4de27a-df55-4628-92e4-f6f676b27be7",
+          "from": "32a416b8-27af-488f-92d5-29128e3b3113",
+          "to": "55da14ce-7cd6-44bf-a9b4-b7d638167e34"
+        },
+        {
+          "id": "44da68a4-76a3-4c50-9b77-a3a14877ebeb",
+          "from": "084a9b16-786b-4777-ab4b-10eaec709593",
+          "to": "7e2d3d54-7065-433a-b03f-b0e7b7c6705e"
+        },
+        {
+          "id": "ffbc665c-81ad-41b0-b549-6fcbdc3ba50f",
+          "from": "231d9b0b-adca-464d-b40c-1e4c29709cf1",
+          "to": "479f7fb4-160c-4f47-8384-3bd1185c0833"
+        },
+        {
+          "id": "71e32d4e-005f-4edf-9952-df048173e377",
+          "from": "cf5193c4-a833-438d-baa7-f464ae82b709",
+          "to": "479f7fb4-160c-4f47-8384-3bd1185c0833"
+        },
+        {
+          "id": "4bcd605a-210a-4115-bc96-f9667c2b3362",
+          "from": "cf5193c4-a833-438d-baa7-f464ae82b709",
+          "to": "7e2d3d54-7065-433a-b03f-b0e7b7c6705e"
+        },
+        {
+          "id": "fbf6e33d-0fc7-4a72-927e-b77cbcefc09a",
+          "from": "266db700-10a4-4813-bd2f-97a01d8ed934",
+          "to": "ff06a7dc-1270-4510-b22f-b9c73e35f28f"
+        },
+        {
+          "id": "b55ad191-d538-4903-8e02-4d5b17b856b0",
+          "from": "9d51c589-17eb-46cb-b3e4-3513a10eb974",
+          "to": "4c073d8c-47f4-4ad1-a539-dca09a3cbd91"
+        },
+        {
+          "id": "8923fcbc-3b08-45e4-8878-908f917d28cd",
+          "from": "6c2b923f-c16d-4283-8e32-0b0e3a3fe0eb",
+          "to": "e2cccabf-c864-491a-8010-ef20a1a9d23f"
+        },
+        {
+          "id": "552a0385-0d65-450c-9fab-e24062bf156a",
+          "from": "6e7d8087-10f2-4543-9cea-57bf22983a3c",
+          "to": "4f095eee-27b7-4ab4-b2c0-4f384a434c78"
+        },
+        {
+          "id": "b6d9180e-1ea1-4972-8b60-07640bdb2ab8",
+          "from": "d19c68bc-59f2-4309-a50c-df2790e16dc4",
+          "to": "78d860c7-6a31-4c4a-babe-32f20436b6a1"
+        },
+        {
+          "id": "5c59587c-dadd-46a5-8b4a-646ef27a7d10",
+          "from": "b8ccd349-1f32-46c0-b282-4a5f1508b584",
+          "to": "fa76ce6e-bbeb-4e13-bc98-88083c5bc45f"
+        },
+        {
+          "id": "f4d45571-25fa-4cf2-93fb-d4478b788561",
+          "from": "1a342a13-5d23-4cd6-882b-0d5b9d983611",
+          "to": "04305165-70ad-4732-aef7-479a04fc0ef8"
+        },
+        {
+          "id": "e2632085-d699-4e9e-ac70-294cda9bda31",
+          "from": "df4feeca-68aa-4e8f-9466-215aeeca91e2",
+          "to": "a855eb42-5ee7-487b-941e-9a3db1984bbf"
+        },
+        {
+          "id": "e024b43a-23b6-4707-8f30-9351f348ddfe",
+          "from": "c863db3d-74e1-4471-a9af-4d945e8c2775",
+          "to": "012b9aeb-fd43-41b4-802d-7871fa0d6579",
+          "anchors": [
+            {
+              "x": 279,
+              "y": 2138,
+              "index": 3
+            },
+            {
+              "x": 4136.49,
+              "y": 2576,
+              "index": 3
+            }
+          ]
+        },
+        {
+          "id": "77abef27-0a03-4f27-bc8f-8d1d0bad2dc1",
+          "from": "8b5dd681-14ef-417e-ab32-6e2c6ef9069a",
+          "to": "75e5da24-6649-450e-80fa-42133b10d4d4"
+        },
+        {
+          "id": "735215eb-9f0c-41b2-bcb5-7b8916c49315",
+          "from": "462e22e8-0c5e-4d32-83e7-6ba6c6775abf",
+          "to": "9a0e425e-b3b3-4ce5-99b8-b9c7d1b72299"
+        },
+        {
+          "id": "289b40f5-5902-4706-9362-1384d692db36",
+          "from": "72d0ddbc-a9a4-4042-8e85-9a34a7d32394",
+          "to": "01b03356-bf40-4514-8b7a-363eb1a9c6b5"
+        },
+        {
+          "id": "56de3c68-add0-4c72-afa4-86fed5de1b4a",
+          "from": "49479259-9df0-4636-87a6-8d7fbe433ab7",
+          "to": "85440bc6-332a-4bd9-8e2f-3a57ee73a5b2"
+        },
+        {
+          "id": "025573ec-2fe9-4f4d-9d6a-5a2183494bac",
+          "from": "10845a83-536f-450d-91be-5cf83fb3bcc2",
+          "to": "3011b31c-7375-40f1-bb28-62350c8a1f4f"
+        },
+        {
+          "id": "588e3611-7791-45f6-84c0-a476c7e289d5",
+          "from": "de4437aa-a7eb-49bf-9bee-e0177800a2f6",
+          "to": "60232faf-7876-4a6a-9c1e-df98d70e6f5d"
+        },
+        {
+          "id": "cc3a1e8e-5e16-4839-b7b4-cb0a242a0e5f",
+          "from": "e76438f9-0681-44c8-916d-474481c2e30c",
+          "to": "444512b3-a35a-420f-9b6d-097c204eda2e"
+        },
+        {
+          "id": "68e3c379-993f-4de3-bdfc-e8cfad40dd11",
+          "from": "b83c95d3-041a-4cc3-b89e-a9225d8ed4a0",
+          "to": "365c140f-c65b-48cc-83aa-58fe3ecf607c"
+        },
+        {
+          "id": "c647386b-0468-4f75-97fb-d807ac777039",
+          "from": "50e232eb-8e18-4907-8142-24256457e8ae",
+          "to": "66151cf0-4130-4a98-aa44-bc800549cd7f"
+        },
+        {
+          "id": "6b70054b-a102-4588-ad33-7fad8cf461c5",
+          "from": "aa2a0855-eba3-4385-a173-25c831a258b7",
+          "to": "2f43d022-b313-45af-8528-407331e54551"
+        },
+        {
+          "id": "a3120d5c-85c3-418d-bc75-443e03673e72",
+          "from": "b6275fd5-8b43-4bad-81e2-c7d56b4a2663",
+          "to": "83d8f2a8-f3b8-4c7b-85a2-43d76f8bb78a"
+        },
+        {
+          "id": "b3acf9c0-dc4d-46f6-ba86-d20a0bd30620",
+          "from": "eabf9bc3-e4aa-4a90-bfa8-e78c7fbcf38d",
+          "to": "7961c898-e90b-480b-8e16-91f8079dd145"
+        },
+        {
+          "id": "107dfd51-667a-4eeb-a93e-1a83453d6471",
+          "from": "2e32a409-f4d0-496a-b458-e3807251e96a",
+          "to": "bc3d10dc-075c-4929-88f9-13b38a5add07"
+        },
+        {
+          "id": "bee6b715-2cea-4a45-b2fd-938b5676f4d0",
+          "from": "214a5f7c-002a-4243-9af7-6309e711d579",
+          "to": "80f91615-becf-425f-a747-596c24278b1f"
+        },
+        {
+          "id": "a8f6f1f2-dc5d-426e-8d42-7e097a23f685",
+          "from": "4713b6c5-4cfa-41c0-bfbb-82c7c9c4d192",
+          "to": "c2792e75-a60c-47b0-9bc0-744f64fd99c1"
+        },
+        {
+          "id": "c38b6f5f-490b-4f84-9f5b-943b6e4dc89f",
+          "from": "fa41afe8-bcfd-4ba1-a3e8-e686e8d945fa",
+          "to": "032b21bf-1342-4cf0-b620-124c1c00042a"
+        },
+        {
+          "id": "061d65f3-a9cb-4462-bd18-dc3832360028",
+          "from": "d6341a09-435a-4c72-baba-e66deb3b4a14",
+          "to": "f8caedbc-28e4-4e5d-a93b-3c02e317df69"
+        },
+        {
+          "id": "db9c2d6e-eba0-47e9-b0b8-2733879eb305",
+          "from": "91b19f75-4fa6-4a1a-83dd-e3d4bfaaf2d6",
+          "to": "9bae1573-1bc4-45b6-890d-98e912a24692"
+        },
+        {
+          "id": "7e888680-f1b7-42c2-aaf7-ebff35f7f917",
+          "from": "ed0bc241-76b7-4155-bede-5bb37b2c35d4",
+          "to": "bae7264b-032a-47b7-8491-74a7a2deec9d"
+        },
+        {
+          "id": "5f1988f8-1154-4e28-8472-6bc1898dbb92",
+          "from": "5f499db0-c0f4-4dad-87e2-4e4d0c31d07e",
+          "to": "8f690558-0ad5-41f4-9b03-ed484e2bf64e"
+        },
+        {
+          "id": "288c162a-cf9a-43f2-b1f3-9c2c562fa846",
+          "from": "42d67983-f52e-4124-bcbe-4d9b837c1d29",
+          "to": "ed43a5ba-3f7a-4064-87cf-7ada7ea5c65b"
+        },
+        {
+          "id": "ebc58cd3-0e23-419c-950f-ab1bf8c23ca4",
+          "from": "cf8877f4-e0d4-4711-88ad-e51238452a35",
+          "to": "6db24d01-e390-4cd9-a32d-615e4b86411f"
+        },
+        {
+          "id": "9db1a566-a40b-42c0-88d4-e743a764bf6f",
+          "from": "2949366b-8a19-44a0-81d9-4d07d5b79a05",
+          "to": "5ede561b-9a9e-4f83-b24c-2011ce3cc210"
+        },
+        {
+          "id": "08dc2cd2-b5b6-45d7-be46-226103a3ddbb",
+          "from": "c78df94c-6b6e-4e70-9efe-57bf2a11c6e9",
+          "to": "b403d903-4dd9-401f-94c2-fa5784453eab"
+        },
+        {
+          "id": "72ffc83b-3f1f-423d-b80c-b9d31cfec5b9",
+          "from": "78c2eb9b-8411-47fc-9f17-02dd658d1444",
+          "to": "d7fab9fe-cbbc-4e03-bb4a-c0ad24fca961"
+        },
+        {
+          "id": "854ea4c4-d314-49af-a463-dd035723c793",
+          "from": "fd32debf-56fd-4b55-8153-ce72516fe980",
+          "to": "1720fe2e-ddbe-40c1-9858-251416339314"
+        },
+        {
+          "id": "e1e6e5d8-71ef-44e5-843b-13b08117e0f1",
+          "from": "942d915c-4699-45dc-bc77-db7e1d6f3efa",
+          "to": "47ebe203-d67a-4783-88af-384fe4582df2"
+        },
+        {
+          "id": "f532d3ab-7bb8-4c43-8f5d-9efcc9671d3d",
+          "from": "c2ac9bfb-498e-473b-815f-569e3bb61396",
+          "to": "01fb80f3-a555-4abb-a31f-7f8513707715"
+        },
+        {
+          "id": "93b76641-bb23-4517-b5a9-b5b1c5faca84",
+          "from": "17673fca-a5fc-4eab-9f79-02f19860523f",
+          "to": "e1ca1374-21b6-43d1-823c-747449f12631"
+        },
+        {
+          "id": "82cabe2d-b09e-4dca-8d76-db08a9054a43",
+          "from": "f24065f8-d798-4954-a546-a1a96275805d",
+          "to": "f9e12699-bcb4-4a7f-8995-4e7d9369e7c2"
+        },
+        {
+          "id": "339735e1-a93e-44f7-98d7-f442d09c717a",
+          "from": "0e79b116-ffe9-4924-a235-8f44bade7ea4",
+          "to": "c4992ba7-2f68-46b7-a392-cc47758675f9"
+        },
+        {
+          "id": "19878be6-7a62-4c1a-89ee-b285b3d11cbc",
+          "from": "52e8c3a8-da3b-4b2d-ba5f-474e5b2a4588",
+          "to": "acb5a3dc-b349-4561-87cb-4eac31e4635a"
+        },
+        {
+          "id": "1a394f91-176e-473a-b480-0da0a1be9188",
+          "from": "39c3d5ae-fa56-470a-96ae-79fbf67e0f12",
+          "to": "17908a05-7298-4067-9dc3-78a40239f51b"
+        },
+        {
+          "id": "f8be9966-8a0e-40a1-af47-8c3b1b974957",
+          "from": "208cde84-81a0-4206-8660-f9277044cb57",
+          "to": "b8efc45c-2d89-4684-931a-a481caa5475b"
+        },
+        {
+          "id": "9dcc5d60-ead7-40e6-88db-561d6b4f8646",
+          "from": "2a4fdf54-4e19-4ace-b898-4b124ad91b20",
+          "to": "ce804727-49b2-4aef-beca-dc53959853d8"
+        },
+        {
+          "id": "3ccc3950-4b06-4a27-9b6e-b3c03a166141",
+          "from": "2a4fdf54-4e19-4ace-b898-4b124ad91b20",
+          "to": "cc529f7c-2951-42ea-b447-b6b78dc5998d"
+        },
+        {
+          "id": "564a5c57-b36d-48c6-bcca-13030fb0b5ac",
+          "from": "345e265b-4b68-4fa1-b1c8-a88822afa495",
+          "to": "2a4fdf54-4e19-4ace-b898-4b124ad91b20"
+        },
+        {
+          "id": "db4961f0-5c7f-4331-9858-97fd020093e4",
+          "from": "e7aa8185-0f9b-4c76-a02a-5e3ed47a2bef",
+          "to": "fcc0803e-50c1-4c89-a968-a1de65b4baef"
+        },
+        {
+          "id": "758ba76c-29c4-45e4-9e4b-16d1194e05f8",
+          "from": "6f91c818-189c-4b8d-8f7a-2484503e5b6b",
+          "to": "619c74bf-70d9-48dc-8f12-fed23fec80d2"
+        },
+        {
+          "id": "5d51e54f-477d-419c-818a-0a7f29ce91a8",
+          "from": "bfd4eb9b-3c90-4c92-85ba-11cae9929295",
+          "to": "6f91c818-189c-4b8d-8f7a-2484503e5b6b"
+        },
+        {
+          "id": "30a96969-dcd9-4ba7-a715-832e2bf63c0b",
+          "from": "0f25342b-7ba2-44c9-97ac-12b82488a403",
+          "to": "dab74da9-7bed-4865-a92c-0ab337f6ec1f",
+          "anchors": [
+            {
+              "x": 1484,
+              "y": 450,
+              "index": 2
+            }
+          ]
+        },
+        {
+          "id": "6c812676-d342-49b9-b51c-2f98f83d26f1",
+          "from": "bdf86caf-f585-4baf-ab1a-06b1f0b91931",
+          "to": "dab74da9-7bed-4865-a92c-0ab337f6ec1f",
+          "anchors": [
+            {
+              "x": 1485,
+              "y": 611,
+              "index": 2
+            }
+          ]
+        },
+        {
+          "id": "6056feeb-d73c-4cae-b02a-7bb6c2486f80",
+          "from": "619c74bf-70d9-48dc-8f12-fed23fec80d2",
+          "to": "bfd4eb9b-3c90-4c92-85ba-11cae9929295",
+          "anchors": [
+            {
+              "x": 1486,
+              "y": 612,
+              "index": 2
+            }
+          ]
+        },
+        {
+          "id": "e35ba534-f8c3-4013-ad48-72880a68438d",
+          "from": "c2792e75-a60c-47b0-9bc0-744f64fd99c1",
+          "to": "8596e34c-d1f7-47fd-9a0c-8f37ffe69eb3"
+        },
+        {
+          "id": "d790d4bb-66b9-48a7-b114-8c1329d54a63",
+          "from": "484646bc-ca9f-4cb3-a622-88284ac94be5",
+          "to": "c7edba6c-df78-493c-a2b6-51cbba6b8aff"
+        }
+      ]
+    },
+    {
+      "id": "45a851a7-9e64-45e2-b832-6356f5183c26",
+      "name": "MitySOM-A5E Mini",
+      "nodes": [
+        {
+          "id": "0af84748-e2a2-4402-9e39-38833e8330d5",
+          "position": {
+            "x": 1208,
+            "y": 340
+          },
+          "width": 0,
+          "twoColumn": true,
+          "interfaces": [
+            {
+              "name": "io",
+              "id": "fe98da67-0c66-4f75-ba20-491ac6c3e75c",
+              "direction": "inout",
+              "side": "left",
+              "sidePosition": 0,
+              "hidden": false
+            }
+          ],
+          "properties": [],
+          "enabledInterfaceGroups": [],
+          "views": [],
+          "name": "Altera A5EB013BB23BE6SCS",
+          "instanceName": "A5EB013BB23BE6SCS"
+        }
+      ],
+      "groups": [],
+      "connections": []
+    },
+    {
+      "id": "e1670bc9-eeb8-4f61-a27a-83d6a3c87e22",
+      "name": "Altera Modular Agilex-5 DC-SCM SoM Assembly",
+      "nodes": [
+        {
+          "id": "587c1b77-71ba-4454-9580-ed69527b90e5",
+          "position": {
+            "x": 35,
+            "y": 877
+          },
+          "width": 0,
+          "twoColumn": true,
+          "interfaces": [
+            {
+              "name": "wire to board_1",
+              "externalName": "wire to board_1",
+              "id": "3c57535a-03c9-4a99-8fd5-8e5d21369d6a",
+              "direction": "inout",
+              "side": "right",
+              "hidden": false
+            },
+            {
+              "name": "usb-c_3",
+              "externalName": "usb-c_3",
+              "id": "6db8b02f-b48d-4184-99a5-cc2e1c5a386e",
+              "direction": "inout",
+              "side": "right",
+              "hidden": false
+            },
+            {
+              "name": "usb-c_2",
+              "externalName": "usb-c_2",
+              "id": "6dfbc8ac-90d3-4733-9e88-5b340d62361a",
+              "direction": "inout",
+              "side": "right",
+              "hidden": false
+            },
+            {
+              "name": "usb-c_1",
+              "externalName": "usb-c_1",
+              "id": "e4fb7bb8-d75e-4003-804e-0a84ae972da6",
+              "direction": "inout",
+              "side": "right",
+              "hidden": false
+            },
+            {
+              "name": "rj45",
+              "externalName": "rj45",
+              "id": "eef9e74d-29b8-4c54-8bb8-4f9fbbb6a366",
+              "direction": "inout",
+              "side": "right",
+              "hidden": false
+            },
+            {
+              "name": "micro sd-card",
+              "externalName": "micro sd-card",
+              "id": "4b0312be-2d3b-47d1-875e-cd7dac50767b",
+              "direction": "inout",
+              "side": "right",
+              "hidden": false
+            },
+            {
+              "name": "mini dp",
+              "externalName": "mini dp",
+              "id": "bbbaedd1-259f-4a14-8299-253fc9635d9f",
+              "direction": "inout",
+              "side": "right",
+              "hidden": false
+            },
+            {
+              "name": "wire to board",
+              "externalName": "wire to board",
+              "id": "92ccfebb-6d33-42a8-9a07-d53cde4c43fe",
+              "direction": "inout",
+              "side": "right",
+              "hidden": false
+            },
+            {
+              "name": "SPI flash socket",
+              "externalName": "SPI flash socket",
+              "id": "52aefaa0-b6d6-4e97-bb4a-616621c89a2c",
+              "direction": "inout",
+              "side": "right",
+              "hidden": false
+            },
+            {
+              "name": "SPI flash socket_1",
+              "externalName": "SPI flash socket_1",
+              "id": "a819783e-7ea1-45a3-bdb5-353144d9779b",
+              "direction": "inout",
+              "side": "right",
+              "hidden": false
+            },
+            {
+              "name": "mitysom_interface",
+              "id": "086b2544-744f-4ba3-8bd5-fcbdddd8ed02",
+              "direction": "inout",
+              "side": "right",
+              "hidden": false
+            },
+            {
+              "name": "dc-scm 2.1",
+              "externalName": "dc-scm 2.1",
+              "id": "b4e7450a-a2ee-4bc9-a82c-46c141416a56",
+              "direction": "inout",
+              "side": "left",
+              "hidden": false
+            }
+          ],
+          "properties": [],
+          "enabledInterfaceGroups": [],
+          "views": [],
+          "name": "Agilex 5 DC-SCM Carrier Board",
+          "instanceName": "Agilex 5 DC-SCM Carrier Board"
+        },
+        {
+          "id": "0044de0e-1205-4f4c-9d88-a52f33e4c735",
+          "position": {
+            "x": 689,
+            "y": 1084
+          },
+          "width": 0,
+          "twoColumn": true,
+          "interfaces": [
+            {
+              "name": "mitysom_interface",
+              "id": "ecdfc935-1d02-4ef5-b646-bf0879d88f25",
+              "direction": "inout",
+              "side": "left",
+              "sidePosition": 0,
+              "hidden": false
+            }
+          ],
+          "properties": [],
+          "enabledInterfaceGroups": [],
+          "views": [],
+          "name": "MitySOM-A5E Mini",
+          "instanceName": "MitySOM-A5E Mini",
+          "subgraph": "45a851a7-9e64-45e2-b832-6356f5183c26"
+        }
+      ],
+      "groups": [],
+      "connections": [
+        {
+          "id": "9c311568-ee81-405f-bfa2-ee7be3caf812",
+          "from": "086b2544-744f-4ba3-8bd5-fcbdddd8ed02",
+          "to": "ecdfc935-1d02-4ef5-b646-bf0879d88f25"
+        }
+      ]
+    }
+  ],
+  "nodes": [
+    {
+      "name": "Agilex-5 DC-SCM Development Setup",
+      "layer": "",
+      "category": "Complex devices",
+      "description": "",
+      "interfaces": [],
+      "properties": [],
+      "subgraphId": "6e04368b-5466-4e21-8d30-be613d53257e",
+      "icon": {
+        "designer-media-icon": "agilex-5-based-dc-scm-dev-setup.webp"
+      },
+      "urls": {
+        "designer_device": "agilex-5-based-dc-scm-dev-setup"
+      }
+    },
+    {
+      "name": "Altera Modular Agilex-5 DC-SCM SoM Assembly",
+      "layer": "",
+      "category": "Complex devices",
+      "description": "",
+      "interfaces": [],
+      "properties": [],
+      "subgraphId": "e1670bc9-eeb8-4f61-a27a-83d6a3c87e22",
+      "icon": {
+        "designer-media-icon": "altera-modular-agilex-5-dc-scm-som-assembly.webp"
+      },
+      "urls": {
+        "designer_device": "altera-modular-agilex-5-dc-scm-som-assembly"
+      }
+    },
+    {
+      "name": "Agilex 5 DC-SCM Carrier Board",
+      "layer": "",
+      "category": "Boards",
+      "description": "",
+      "interfaces": [
+        {
+          "name": "wire to board_1",
+          "direction": "inout",
+          "side": "right"
+        },
+        {
+          "name": "usb-c_3",
+          "direction": "inout",
+          "side": "right"
+        },
+        {
+          "name": "usb-c_2",
+          "direction": "inout",
+          "side": "right"
+        },
+        {
+          "name": "usb-c_1",
+          "direction": "inout",
+          "side": "right"
+        },
+        {
+          "name": "rj45",
+          "direction": "inout",
+          "side": "right"
+        },
+        {
+          "name": "micro sd-card",
+          "direction": "inout",
+          "side": "right"
+        },
+        {
+          "name": "mini dp",
+          "direction": "inout",
+          "side": "right"
+        },
+        {
+          "name": "wire to board",
+          "direction": "inout",
+          "side": "right"
+        },
+        {
+          "name": "SPI flash socket",
+          "direction": "inout",
+          "side": "right"
+        },
+        {
+          "name": "SPI flash socket_1",
+          "direction": "inout",
+          "side": "right"
+        },
+        {
+          "name": "mitysom_interface",
+          "direction": "inout",
+          "side": "right"
+        },
+        {
+          "name": "dc-scm 2.1",
+          "direction": "inout",
+          "side": "left"
+        }
+      ],
+      "properties": [],
+      "subgraphId": "639c0789-dd02-4526-8f2c-bf21e4ad06d9",
+      "icon": {
+        "hw-icon": "/imported/boards/altera-modular-agilex-5-dc-scm/previews/orthoT.webp"
+      },
+      "urls": {
+        "designer_device": "altera-modular-agilex-5-dc-scm",
+        "hwp": "boards/altera-modular-agilex-5-dc-scm"
+      }
+    },
+    {
+      "name": "ACA-SPI-006-K01",
+      "layer": "",
+      "category": "Connectors",
+      "description": "",
+      "interfaces": [
+        {
+          "name": "SPI",
+          "type": [
+            "spi"
+          ],
+          "side": "left",
+          "direction": "inout",
+          "maxConnectionsCount": 0
+        },
+        {
+          "name": "SPI flash socket",
+          "type": "spi",
+          "direction": "inout",
+          "maxConnectionsCount": 0
+        }
+      ],
+      "properties": [],
+      "icon": {
+        "hw-icon": "/imported/components/socket-sop2-16-aca-spi-006-k01/previews/isoT.webp"
+      },
+      "urls": {
+        "designer_device": "lotes-aca-spi-006-k01",
+        "hwp": "components/lotes-aca-spi-006-k01"
+      }
+    },
+    {
+      "name": "DC-SCM 2.1 Edge",
+      "category": "Connectors/Edge/DC-SCM 2.1 Edge",
+      "description": "",
+      "interfaces": [
+        {
+          "name": "DC_SCM_STBY_RDY",
+          "side": "left",
+          "direction": "inout",
+          "maxConnectionsCount": -1
+        },
+        {
+          "name": "DC_SCM_STBY_RST_B",
+          "side": "left",
+          "direction": "inout",
+          "maxConnectionsCount": -1
+        },
+        {
+          "name": "PCIE_HPM_SCM_PERST_B",
+          "side": "left",
+          "direction": "inout",
+          "maxConnectionsCount": -1
+        },
+        {
+          "name": "dc-scm 2.1",
+          "side": "left",
+          "direction": "inout",
+          "maxConnectionsCount": -1
+        },
+        {
+          "name": "i2c/i3c[13]",
+          "side": "left",
+          "direction": "inout",
+          "maxConnectionsCount": -1
+        },
+        {
+          "name": "i2c/i3c[15]",
+          "side": "left",
+          "direction": "inout",
+          "maxConnectionsCount": -1
+        },
+        {
+          "name": "i2c/i3c[17]",
+          "side": "left",
+          "direction": "inout",
+          "maxConnectionsCount": -1
+        },
+        {
+          "name": "i2c/i3c[19]",
+          "side": "left",
+          "direction": "inout",
+          "maxConnectionsCount": -1
+        },
+        {
+          "name": "i2c[1]",
+          "type": [
+            "i2c"
+          ],
+          "side": "left",
+          "direction": "inout",
+          "maxConnectionsCount": -1
+        },
+        {
+          "name": "i2c[3]",
+          "type": [
+            "i2c"
+          ],
+          "side": "left",
+          "direction": "inout",
+          "maxConnectionsCount": -1
+        },
+        {
+          "name": "i2c[5]",
+          "type": [
+            "i2c"
+          ],
+          "side": "left",
+          "direction": "inout",
+          "maxConnectionsCount": -1
+        },
+        {
+          "name": "i2c[7]",
+          "type": [
+            "i2c"
+          ],
+          "side": "left",
+          "direction": "inout",
+          "maxConnectionsCount": -1
+        },
+        {
+          "name": "i2c[9]",
+          "type": [
+            "i2c"
+          ],
+          "side": "left",
+          "direction": "inout",
+          "maxConnectionsCount": -1
+        },
+        {
+          "name": "jtag",
+          "type": [
+            "jtag"
+          ],
+          "side": "left",
+          "direction": "inout",
+          "maxConnectionsCount": -1
+        },
+        {
+          "name": "ltpi",
+          "side": "right",
+          "direction": "inout",
+          "maxConnectionsCount": -1
+        },
+        {
+          "name": "ncsi",
+          "type": [
+            "ncsi"
+          ],
+          "side": "left",
+          "direction": "inout",
+          "maxConnectionsCount": -1
+        },
+        {
+          "name": "pcie[0]",
+          "type": [
+            "pcie"
+          ],
+          "side": "right",
+          "direction": "inout",
+          "maxConnectionsCount": -1
+        },
+        {
+          "name": "pcie[1]",
+          "type": [
+            "pcie"
+          ],
+          "side": "right",
+          "direction": "inout",
+          "maxConnectionsCount": -1
+        },
+        {
+          "name": "pcie[2]",
+          "type": [
+            "pcie"
+          ],
+          "side": "right",
+          "direction": "inout",
+          "maxConnectionsCount": -1
+        },
+        {
+          "name": "uart",
+          "type": [
+            "serial"
+          ],
+          "side": "left",
+          "direction": "inout",
+          "maxConnectionsCount": -1
+        },
+        {
+          "name": "qspi",
+          "type": [
+            "qspi"
+          ],
+          "side": "right",
+          "direction": "inout",
+          "maxConnectionsCount": -1
+        },
+        {
+          "name": "DC_SCM_INTRUSION_B",
+          "side": "right",
+          "direction": "inout",
+          "maxConnectionsCount": -1
+        },
+        {
+          "name": "DC_SCM_SPI_SCMCNTRL_IRQ0_B",
+          "side": "right",
+          "direction": "inout",
+          "maxConnectionsCount": -1
+        },
+        {
+          "name": "DC_SCM_STBY_EN",
+          "side": "right",
+          "direction": "inout",
+          "maxConnectionsCount": -1
+        },
+        {
+          "name": "espi",
+          "type": [
+            "espi"
+          ],
+          "side": "right",
+          "direction": "inout",
+          "maxConnectionsCount": -1
+        },
+        {
+          "name": "i2c/i3c[12]",
+          "side": "right",
+          "direction": "inout",
+          "maxConnectionsCount": -1
+        },
+        {
+          "name": "i2c/i3c[14]",
+          "side": "right",
+          "direction": "inout",
+          "maxConnectionsCount": -1
+        },
+        {
+          "name": "i2c/i3c[16]",
+          "side": "right",
+          "direction": "inout",
+          "maxConnectionsCount": -1
+        },
+        {
+          "name": "i2c/i3c[18]",
+          "side": "right",
+          "direction": "inout",
+          "maxConnectionsCount": -1
+        },
+        {
+          "name": "i2c[0]",
+          "type": [
+            "i2c"
+          ],
+          "side": "right",
+          "direction": "inout",
+          "maxConnectionsCount": -1
+        },
+        {
+          "name": "i2c[2]",
+          "type": [
+            "i2c"
+          ],
+          "side": "right",
+          "direction": "inout",
+          "maxConnectionsCount": -1
+        },
+        {
+          "name": "i2c[4]",
+          "type": [
+            "i2c"
+          ],
+          "side": "right",
+          "direction": "inout",
+          "maxConnectionsCount": -1
+        },
+        {
+          "name": "i2c[6]",
+          "type": [
+            "i2c"
+          ],
+          "side": "right",
+          "direction": "inout",
+          "maxConnectionsCount": -1
+        },
+        {
+          "name": "i2c[8]",
+          "type": [
+            "i2c"
+          ],
+          "side": "right",
+          "direction": "inout",
+          "maxConnectionsCount": -1
+        },
+        {
+          "name": "pcie x4",
+          "type": [
+            "pcie"
+          ],
+          "side": "right",
+          "direction": "inout",
+          "maxConnectionsCount": -1
+        },
+        {
+          "name": "refclk",
+          "side": "right",
+          "direction": "inout",
+          "maxConnectionsCount": -1
+        },
+        {
+          "name": "spi[0]",
+          "type": [
+            "spi"
+          ],
+          "side": "right",
+          "direction": "inout",
+          "maxConnectionsCount": -1
+        },
+        {
+          "name": "spi[1]",
+          "type": [
+            "spi"
+          ],
+          "side": "right",
+          "direction": "inout",
+          "maxConnectionsCount": -1
+        },
+        {
+          "name": "usb[0]",
+          "type": [
+            "usb"
+          ],
+          "side": "right",
+          "direction": "inout",
+          "maxConnectionsCount": -1
+        },
+        {
+          "name": "usb[1]",
+          "type": [
+            "usb"
+          ],
+          "side": "right",
+          "direction": "inout",
+          "maxConnectionsCount": -1
+        },
+        {
+          "name": "rootport_refclk",
+          "side": "right",
+          "direction": "inout",
+          "maxConnectionsCount": 0
+        },
+        {
+          "name": "peci",
+          "direction": "inout",
+          "side": "left",
+          "maxConnectionsCount": 0
+        }
+      ],
+      "properties": [],
+      "includeName": "DC-SCM 2.1 Edge"
+    },
+    {
+      "name": "DC-SCM Breakout Board",
+      "category": "Boards/DC-SCM Breakout Board",
+      "description": "",
+      "interfaces": [
+        {
+          "name": "DC_SCM_SPI_SCMCNTRL_IRQ0_B",
+          "side": "left",
+          "direction": "inout",
+          "maxConnectionsCount": -1,
+          "override": false
+        },
+        {
+          "name": "DC_SCM_STBY_RDY",
+          "side": "left",
+          "direction": "inout",
+          "maxConnectionsCount": -1,
+          "override": false
+        },
+        {
+          "name": "PCIE_HPM_SCM_PERST_B",
+          "side": "left",
+          "direction": "inout",
+          "maxConnectionsCount": -1,
+          "override": false
+        },
+        {
+          "name": "espi",
+          "type": [
+            "espi"
+          ],
+          "side": "left",
+          "direction": "inout",
+          "maxConnectionsCount": -1,
+          "override": false
+        },
+        {
+          "name": "i2c",
+          "type": [
+            "i2c"
+          ],
+          "side": "left",
+          "direction": "inout",
+          "maxConnectionsCount": -1,
+          "override": false
+        },
+        {
+          "name": "i2c/i3c[12]",
+          "side": "left",
+          "direction": "inout",
+          "maxConnectionsCount": -1,
+          "override": false
+        },
+        {
+          "name": "i2c/i3c[13]",
+          "side": "left",
+          "direction": "inout",
+          "maxConnectionsCount": -1,
+          "override": false
+        },
+        {
+          "name": "i2c/i3c[16]",
+          "side": "left",
+          "direction": "inout",
+          "maxConnectionsCount": -1,
+          "override": false
+        },
+        {
+          "name": "i2c/i3c[17]",
+          "side": "left",
+          "direction": "inout",
+          "maxConnectionsCount": -1,
+          "override": false
+        },
+        {
+          "name": "i2c[1]",
+          "type": [
+            "i2c"
+          ],
+          "side": "left",
+          "direction": "inout",
+          "maxConnectionsCount": -1,
+          "override": false
+        },
+        {
+          "name": "i2c[2]",
+          "type": [
+            "i2c"
+          ],
+          "side": "left",
+          "direction": "inout",
+          "maxConnectionsCount": -1,
+          "override": false
+        },
+        {
+          "name": "i2c[7]",
+          "type": [
+            "i2c"
+          ],
+          "side": "left",
+          "direction": "inout",
+          "maxConnectionsCount": -1,
+          "override": false
+        },
+        {
+          "name": "i2c[8]",
+          "type": [
+            "i2c"
+          ],
+          "side": "left",
+          "direction": "inout",
+          "maxConnectionsCount": -1,
+          "override": false
+        },
+        {
+          "name": "ncsi",
+          "type": [
+            "ncsi"
+          ],
+          "side": "left",
+          "direction": "inout",
+          "maxConnectionsCount": -1,
+          "override": false
+        },
+        {
+          "name": "refclk",
+          "side": "left",
+          "direction": "inout",
+          "maxConnectionsCount": -1,
+          "override": false
+        },
+        {
+          "name": "spi[1]",
+          "type": [
+            "spi"
+          ],
+          "side": "left",
+          "direction": "inout",
+          "maxConnectionsCount": -1,
+          "override": false
+        },
+        {
+          "name": "usb a",
+          "type": [
+            "usb a"
+          ],
+          "side": "left",
+          "direction": "inout",
+          "maxConnectionsCount": -1,
+          "override": false
+        },
+        {
+          "name": "wire to board",
+          "type": [
+            "wire to board"
+          ],
+          "side": "left",
+          "direction": "inout",
+          "maxConnectionsCount": -1,
+          "override": false
+        },
+        {
+          "name": "DC_SCM_INTRUSION_B",
+          "side": "right",
+          "direction": "inout",
+          "maxConnectionsCount": -1,
+          "override": false
+        },
+        {
+          "name": "DC_SCM_STBY_EN",
+          "side": "right",
+          "direction": "inout",
+          "maxConnectionsCount": -1,
+          "override": false
+        },
+        {
+          "name": "DC_SCM_STBY_RST_B",
+          "side": "right",
+          "direction": "inout",
+          "maxConnectionsCount": -1,
+          "override": false
+        },
+        {
+          "name": "dc-scm 2.1",
+          "side": "left",
+          "direction": "inout",
+          "maxConnectionsCount": -1,
+          "override": false
+        },
+        {
+          "name": "fru i2c",
+          "type": [
+            "i2c"
+          ],
+          "side": "right",
+          "direction": "inout",
+          "maxConnectionsCount": -1,
+          "override": false
+        },
+        {
+          "name": "gpio",
+          "side": "right",
+          "direction": "inout",
+          "maxConnectionsCount": -1,
+          "override": false
+        },
+        {
+          "name": "i2c/i3c[14]",
+          "side": "right",
+          "direction": "inout",
+          "maxConnectionsCount": -1,
+          "override": false
+        },
+        {
+          "name": "i2c/i3c[15]",
+          "side": "right",
+          "direction": "inout",
+          "maxConnectionsCount": -1,
+          "override": false
+        },
+        {
+          "name": "i2c/i3c[18]",
+          "side": "right",
+          "direction": "inout",
+          "maxConnectionsCount": -1,
+          "override": false
+        },
+        {
+          "name": "i2c/i3c[19]",
+          "side": "right",
+          "direction": "inout",
+          "maxConnectionsCount": -1,
+          "override": false
+        },
+        {
+          "name": "i2c[3]",
+          "type": [
+            "i2c"
+          ],
+          "side": "right",
+          "direction": "inout",
+          "maxConnectionsCount": -1,
+          "override": false
+        },
+        {
+          "name": "i2c[4]",
+          "type": [
+            "i2c"
+          ],
+          "side": "right",
+          "direction": "inout",
+          "maxConnectionsCount": -1,
+          "override": false
+        },
+        {
+          "name": "i2c[9]",
+          "type": [
+            "i2c"
+          ],
+          "side": "right",
+          "direction": "inout",
+          "maxConnectionsCount": -1,
+          "override": false
+        },
+        {
+          "name": "oculink",
+          "type": [
+            "oculink"
+          ],
+          "side": "right",
+          "direction": "inout",
+          "maxConnectionsCount": -1,
+          "override": false
+        },
+        {
+          "name": "pcie x4",
+          "type": [
+            "pcie"
+          ],
+          "side": "right",
+          "direction": "inout",
+          "maxConnectionsCount": -1,
+          "override": false
+        },
+        {
+          "name": "spi[0]",
+          "type": [
+            "spi"
+          ],
+          "side": "right",
+          "direction": "inout",
+          "maxConnectionsCount": -1,
+          "override": false
+        },
+        {
+          "name": "usb-c",
+          "type": [
+            "usb-c"
+          ],
+          "side": "right",
+          "direction": "inout",
+          "maxConnectionsCount": -1,
+          "override": false
+        }
+      ],
+      "properties": [],
+      "includeName": "DC-SCM Breakout Board",
+      "icon": {
+        "hw-icon": "/imported/boards/dc-scm-breakout-board/previews/orthoT.webp"
+      },
+      "urls": {
+        "designer_device": "bmc-breakout-board",
+        "hwp": "boards/dc-scm-breakout-board"
+      }
+    },
+    {
+      "name": "SY75602BTWL-TR",
+      "layer": "",
+      "category": "Default category",
+      "description": "",
+      "interfaces": [
+        {
+          "name": "clk",
+          "side": "left",
+          "direction": "inout",
+          "maxConnectionsCount": 0
+        },
+        {
+          "name": "clk_GTS",
+          "side": "right",
+          "direction": "inout",
+          "maxConnectionsCount": 1
+        },
+        {
+          "name": "clk_HS",
+          "direction": "inout",
+          "side": "left",
+          "maxConnectionsCount": 0
+        }
+      ],
+      "properties": [],
+      "icon": {
+        "hw-icon": "/imported/components/vdfn-8-1-6x1-4mm-p0-4mm-microchip-technology-sy75602btwl-tr/previews/isoT.webp"
+      },
+      "urls": {
+        "designer_device": "microchip-technology-sy75602btwl-tr",
+        "hwp": "components/microchip-technology-sy75602btwl-tr"
+      }
+    },
+    {
+      "name": "SY75604BTWL-TR",
+      "layer": "",
+      "category": "Default category",
+      "description": "",
+      "interfaces": [
+        {
+          "name": "clk",
+          "side": "left",
+          "direction": "inout",
+          "maxConnectionsCount": 0
+        },
+        {
+          "name": "clk_0",
+          "side": "right",
+          "direction": "inout",
+          "maxConnectionsCount": 0
+        },
+        {
+          "name": "clk_1",
+          "direction": "inout",
+          "side": "left",
+          "maxConnectionsCount": 0
+        },
+        {
+          "name": "clk_2",
+          "direction": "inout",
+          "side": "left",
+          "maxConnectionsCount": 0
+        }
+      ],
+      "properties": [],
+      "icon": {
+        "hw-icon": "/imported/components/vqfn-16-1ep-3x3mm-p0-5mm-ep1-1x1-1mm/previews/isoT.webp"
+      },
+      "urls": {
+        "designer_device": "microchip-technology-sy75604btwl-tr",
+        "hwp": "components/microchip-technology-sy75604btwl-tr"
+      }
+    },
+    {
+      "name": "MAX6621AUB+",
+      "layer": "",
+      "category": "Default category",
+      "description": "",
+      "interfaces": [
+        {
+          "name": "peci",
+          "side": "left",
+          "direction": "inout",
+          "maxConnectionsCount": 0
+        },
+        {
+          "name": "i2c",
+          "direction": "inout",
+          "maxConnectionsCount": 0
+        }
+      ],
+      "properties": [],
+      "icon": {
+        "hw-icon": "/imported/components/vssop-10-3x3mm-p0-5mm/previews/isoT.webp"
+      },
+      "urls": {
+        "designer_device": "analog-devices-max6621aub",
+        "hwp": "components/analog-devices-max6621aub"
+      }
+    },
+    {
+      "category": "Connectors/Edge/MitySOM-A5E Mini Connector",
+      "interfaces": [
+        {
+          "direction": "inout",
+          "maxConnectionsCount": -1,
+          "name": "DC_SCM_INTRUSION_B",
+          "side": "left"
+        },
+        {
+          "direction": "inout",
+          "maxConnectionsCount": -1,
+          "name": "DC_SCM_SPI_SCMCNTRL_IRQ0_B",
+          "side": "left"
+        },
+        {
+          "direction": "inout",
+          "maxConnectionsCount": -1,
+          "name": "DC_SCM_STBY_EN",
+          "side": "left"
+        },
+        {
+          "direction": "inout",
+          "maxConnectionsCount": -1,
+          "name": "DC_SCM_STBY_RDY",
+          "side": "right"
+        },
+        {
+          "direction": "inout",
+          "maxConnectionsCount": -1,
+          "name": "DC_SCM_STBY_RST_B",
+          "side": "right"
+        },
+        {
+          "direction": "inout",
+          "maxConnectionsCount": -1,
+          "name": "PCIE_HPM_SCM_PERST_B",
+          "side": "right"
+        },
+        {
+          "direction": "inout",
+          "maxConnectionsCount": -1,
+          "name": "clk",
+          "side": "left"
+        },
+        {
+          "direction": "inout",
+          "maxConnectionsCount": -1,
+          "name": "dp",
+          "side": "left",
+          "type": "dp"
+        },
+        {
+          "direction": "inout",
+          "maxConnectionsCount": -1,
+          "name": "espi",
+          "side": "left",
+          "type": "espi"
+        },
+        {
+          "direction": "inout",
+          "maxConnectionsCount": -1,
+          "name": "i2c[0]",
+          "side": "right",
+          "type": "i2c"
+        },
+        {
+          "direction": "inout",
+          "maxConnectionsCount": -1,
+          "name": "i2c[12]",
+          "side": "right",
+          "type": "i2c"
+        },
+        {
+          "direction": "inout",
+          "maxConnectionsCount": -1,
+          "name": "i2c[13]",
+          "side": "left",
+          "type": "i2c"
+        },
+        {
+          "direction": "inout",
+          "maxConnectionsCount": -1,
+          "name": "i2c[14]",
+          "side": "right",
+          "type": "i2c"
+        },
+        {
+          "direction": "inout",
+          "maxConnectionsCount": -1,
+          "name": "i2c[15]",
+          "side": "left",
+          "type": "i2c"
+        },
+        {
+          "direction": "inout",
+          "maxConnectionsCount": -1,
+          "name": "i2c[16]",
+          "side": "right",
+          "type": "i2c"
+        },
+        {
+          "direction": "inout",
+          "maxConnectionsCount": -1,
+          "name": "i2c[17]",
+          "side": "left",
+          "type": "i2c"
+        },
+        {
+          "direction": "inout",
+          "maxConnectionsCount": -1,
+          "name": "i2c[18]",
+          "side": "right",
+          "type": "i2c"
+        },
+        {
+          "direction": "inout",
+          "maxConnectionsCount": -1,
+          "name": "i2c[19]",
+          "side": "left",
+          "type": "i2c"
+        },
+        {
+          "direction": "inout",
+          "maxConnectionsCount": -1,
+          "name": "i2c[1]",
+          "side": "left",
+          "type": "i2c"
+        },
+        {
+          "direction": "inout",
+          "maxConnectionsCount": -1,
+          "name": "i2c[2]",
+          "side": "right",
+          "type": "i2c"
+        },
+        {
+          "direction": "inout",
+          "maxConnectionsCount": -1,
+          "name": "i2c[3]",
+          "side": "left",
+          "type": "i2c"
+        },
+        {
+          "direction": "inout",
+          "maxConnectionsCount": -1,
+          "name": "i2c[4]",
+          "side": "right",
+          "type": "i2c"
+        },
+        {
+          "direction": "inout",
+          "maxConnectionsCount": -1,
+          "name": "i2c[5]",
+          "side": "left",
+          "type": "i2c"
+        },
+        {
+          "direction": "inout",
+          "maxConnectionsCount": -1,
+          "name": "i2c[6]",
+          "side": "right",
+          "type": "i2c"
+        },
+        {
+          "direction": "inout",
+          "maxConnectionsCount": -1,
+          "name": "i2c[7]",
+          "side": "left",
+          "type": "i2c"
+        },
+        {
+          "direction": "inout",
+          "maxConnectionsCount": -1,
+          "name": "i2c[8]",
+          "side": "right",
+          "type": "i2c"
+        },
+        {
+          "direction": "inout",
+          "maxConnectionsCount": -1,
+          "name": "i2c[9]",
+          "side": "left",
+          "type": "i2c"
+        },
+        {
+          "array": [
+            0,
+            2
+          ],
+          "direction": "inout",
+          "maxConnectionsCount": -1,
+          "name": "jtag",
+          "side": "right",
+          "type": "jtag"
+        },
+        {
+          "direction": "inout",
+          "maxConnectionsCount": -1,
+          "name": "ltpi",
+          "side": "right"
+        },
+        {
+          "direction": "inout",
+          "maxConnectionsCount": -1,
+          "name": "mitysom_interface",
+          "side": "left"
+        },
+        {
+          "direction": "inout",
+          "maxConnectionsCount": -1,
+          "name": "ncsi",
+          "side": "right",
+          "type": "ncsi"
+        },
+        {
+          "direction": "inout",
+          "maxConnectionsCount": -1,
+          "name": "qspi",
+          "side": "right",
+          "type": "qspi"
+        },
+        {
+          "direction": "inout",
+          "maxConnectionsCount": -1,
+          "name": "rgmii",
+          "side": "right",
+          "type": "rgmii"
+        },
+        {
+          "direction": "inout",
+          "maxConnectionsCount": -1,
+          "name": "sdio",
+          "side": "left",
+          "type": "sdio"
+        },
+        {
+          "direction": "inout",
+          "maxConnectionsCount": -1,
+          "name": "sfp",
+          "side": "left"
+        },
+        {
+          "direction": "inout",
+          "maxConnectionsCount": -1,
+          "name": "spi",
+          "side": "left",
+          "type": "spi"
+        },
+        {
+          "array": [
+            0,
+            2
+          ],
+          "direction": "inout",
+          "maxConnectionsCount": -1,
+          "name": "uart",
+          "side": "right",
+          "type": "serial"
+        },
+        {
+          "array": [
+            0,
+            2
+          ],
+          "direction": "inout",
+          "maxConnectionsCount": -1,
+          "name": "ulpi",
+          "side": "right",
+          "type": "ulpi"
+        },
+        {
+          "array": [
+            0,
+            3
+          ],
+          "direction": "inout",
+          "maxConnectionsCount": -1,
+          "name": "usb",
+          "side": "left",
+          "type": "usb"
+        },
+        {
+          "name": "pcie[0]",
+          "type": [
+            "pcie"
+          ],
+          "side": "right",
+          "direction": "inout",
+          "maxConnectionsCount": -1
+        },
+        {
+          "name": "pcie[1]",
+          "type": [
+            "pcie"
+          ],
+          "side": "right",
+          "direction": "inout",
+          "maxConnectionsCount": -1
+        },
+        {
+          "name": "pcie x4",
+          "type": [
+            "pcie"
+          ],
+          "side": "right",
+          "direction": "inout",
+          "maxConnectionsCount": -1
+        }
+      ],
+      "isCategory": true,
+      "includeName": "MitySOM-A5E Mini Connector"
+    },
+    {
+      "name": "MitySOM-A5E Mini",
+      "layer": "",
+      "category": "SoMs",
+      "description": "",
+      "interfaces": [
+        {
+          "name": "mitysom_interface",
+          "direction": "inout",
+          "side": "left",
+          "maxConnectionsCount": 0
+        }
+      ],
+      "properties": [],
+      "subgraphId": "45a851a7-9e64-45e2-b832-6356f5183c26",
+      "icon": {
+        "hw-icon": "/imported/components/mitysom-a5e-mini/previews/isoT.webp"
+      },
+      "urls": {
+        "designer_device": "critical-link-a5ed-b16-1x4-mri-cs",
+        "hwp": "components/critical-link-a5ed-b16-1x4-mri-cs"
+      }
+    }
+  ],
+  "entryGraph": "6e04368b-5466-4e21-8d30-be613d53257e"
+}

@@ -2,6 +2,8 @@ company: Altera
 description: Open Source, Agilex 5E based DC-SCM
 name: Agilex 5E Modular DC-SCM
 
+spec: ./specification.json
+
 scenarios:
   Agilex 5-based DC-SCM Kit:
     device: agilex-5-based-dc-scm-dev-setup
